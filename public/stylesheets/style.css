@@ -8,97 +8,6 @@
 /*
  * Nib provides a CSS reset
  */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-family: inherit;
-  font-size: 100%;
-  vertical-align: baseline;
-}
-body {
-  line-height: 1;
-  color: #000;
-  background: #fff;
-}
-ol,
-ul {
-  list-style: none;
-}
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-  vertical-align: middle;
-}
-caption,
-th,
-td {
-  text-align: left;
-  font-weight: normal;
-  vertical-align: middle;
-}
-a img {
-  border: none;
-}
 /*
  * Store the main color and
  * background color as variables
@@ -169,6 +78,13 @@ header img {
     width: 33%;
   }
 }
+a {
+  text-decoration: none;
+  color: #4a8acc;
+}
+a:visited {
+  color: #4a8acc;
+}
 .sidebar {
   float: left;
   width: 40%;
@@ -210,6 +126,7 @@ header img {
   clear: both;
   display: block;
   margin: 5px auto;
+  margin-top: 18px;
   margin-bottom: 15px;
 }
 @media screen and (max-width: 450px) {
@@ -229,7 +146,7 @@ header img {
 .sidebar .widget img {
   width: 90%;
   display: block;
-  margin: 5px auto;
+  margin: 20px auto;
 }
 .sidebar .widget p {
   font-size: 13px;
@@ -259,7 +176,6 @@ footer {
   font-size: 14px;
   font-weight: normal;
   line-height: 1.428571429;
-  text-align: center;
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
