@@ -49,7 +49,7 @@ app.locals({
 app.get('/', function (req, res) {
 
 	// Process speaker list - Ignore myself
-	var Lanyrd = require('Lanyrd');
+	var Lanyrd = require('lanyrd');
 	Lanyrd.speakers('hackference','2014',function(error, response, returnObj ){
 		var speakerObject = {};
 		var counter = 0;

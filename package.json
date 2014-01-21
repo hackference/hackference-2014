@@ -7,6 +7,6 @@
 		"jade": "*",
 		"stylus": "*",
 		"nib": "*",
-		"Lanyrd":"*"
+		"lanyrd":"*"
 	}
 }
