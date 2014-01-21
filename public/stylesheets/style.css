@@ -1,0 +1,274 @@
+/*
+ * Import nib
+ */
+/*
+ * Grab a custom font from Google
+ */
+@import url("http://fonts.googleapis.com/css?family=Lato|Ubuntu");
+/*
+ * Nib provides a CSS reset
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+/*
+ * Store the main color and
+ * background color as variables
+ */
+body {
+  font-family: 'Lato';
+  background-color: #faf9f0;
+  color: #444;
+}
+header {
+  font-family: 'Ubuntu';
+  padding: 50px 10px;
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+/*
+   * Note the use of the `main-color`
+   * variable and the `darken` function
+   */
+  background-color: #ebebeb;
+  border-bottom: 1px solid #a5a5a5;
+  text-shadow: 0px -1px 0px #a5a5a5;
+}
+header img {
+  width: 100%;
+}
+@media screen and (min-width: 450px) {
+  header img {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 750px) {
+  header img {
+    width: 350px;
+  }
+}
+.container {
+  width: 90%;
+  margin: 50px auto;
+  overflow: hidden;
+}
+@media screen and (min-width: 750px) {
+  .container {
+    width: 750px;
+  }
+}
+.main-content {
+  float: left;
+  width: 60%;
+}
+.main-content p {
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 450px) {
+  .main-content {
+    width: 100%;
+    float: none;
+    margin-bottom: 20px;
+  }
+}
+.main-content ul.speakers li {
+  display: inline-block;
+  text-align: center;
+  width: 50%;
+}
+@media screen and (min-width: 750px) {
+  .main-content ul.speakers li {
+    width: 33%;
+  }
+}
+.sidebar {
+  float: left;
+  width: 40%;
+}
+@media screen and (max-width: 450px) {
+  .sidebar {
+    width: 100%;
+    float: none;
+  }
+}
+.sidebar .widget {
+  margin-bottom: 20px;
+/*
+     * Note the lack of vendor
+     * prefixes here. Nib will
+     * add them for us
+     */
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  margin-left: 20px;
+  background-color: #fff;
+  -webkit-box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
+  box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
+}
+.sidebar .widget form.subscribe {
+  display: block;
+}
+.sidebar .widget form.subscribe label {
+  padding: 0px 10px;
+  display: block;
+  clear: both;
+}
+.sidebar .widget form.subscribe label input {
+  float: right;
+  width: 60%;
+}
+.sidebar .widget form.subscribe button.btn {
+  clear: both;
+  display: block;
+  margin: 5px auto;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 450px) {
+  .sidebar .widget {
+    margin-left: 0;
+  }
+}
+.sidebar .widget h2 {
+  font-family: 'Ubuntu';
+  margin: 13px 10px 4px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #ddd;
+  -webkit-border-radius: 2px 2px 0px 0px;
+  border-radius: 2px 2px 0px 0px;
+  margin-bottom: 10px;
+}
+.sidebar .widget img {
+  width: 90%;
+  display: block;
+  margin: 5px auto;
+}
+.sidebar .widget p {
+  font-size: 13px;
+  padding: 0px 10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+p {
+  line-height: 1.8;
+}
+footer {
+  width: 90%;
+  margin: 50px auto;
+  border-top: 1px dotted #ccc;
+  padding-top: 5px;
+  font-size: 13px;
+}
+@media screen and (min-width: 750px) {
+  footer {
+    width: 750px;
+  }
+}
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.428571429;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  -webkit-user-select: none;
+  color: #fff;
+  background-color: #428bca;
+  border-color: #357ebd;
+}

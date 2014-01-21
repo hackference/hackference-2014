@@ -1,0 +1,18 @@
+extend layout
+block content
+  h1 #{title}
+  p
+    | Hackference is back, and it's bigger and getter than before, we're already getting speakers and awesome talks organised.
+    | And looking into how we can make the hackathon better than anything the midlands has ever seen.
+  p
+    | This year the conference is a two track event, bringing you access to more great subjects.
+  h2 Speakers
+  p
+    | We've already got some great speakers from the many corners of the development world, some are below.
+    | We will list more as they become confirmed.
+  ul(class="speakers")
+    each val, index in speakerObject
+      li
+        img(src=val.image alt=val.name title=val.name)
+        p
+          a(href=val.twitter alt=val.name title=val.name target="_blank")=val.name
