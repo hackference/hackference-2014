@@ -68,6 +68,9 @@ header img {
     margin-bottom: 20px;
   }
 }
+.main-content ul.speakers {
+  padding: 0px;
+}
 .main-content ul.speakers li {
   display: inline-block;
   text-align: center;
