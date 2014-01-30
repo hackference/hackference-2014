@@ -4,192 +4,346 @@
 /*
  * Grab a custom font from Google
  */
-@import url("http://fonts.googleapis.com/css?family=Lato|Ubuntu");
 /*
  * Nib provides a CSS reset
  */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
 /*
  * Store the main color and
  * background color as variables
  */
+/* Basics
+*********************************/
+div,
+article,
+section,
+header,
+footer,
+nav,
+li {
+  position: relative;
+}
+group:after {
+  display: block;
+  height: 0;
+  clear: both;
+  content: ".";
+  visibility: hidden;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 body {
-  font-family: 'Lato';
-  background-color: #faf9f0;
-  color: #444;
+  background: #f9f9f9;
+  font-family: 'Montserrat', sans-serif;
+  color: #323131;
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+}
+::selection {
+  background: #ff0;
+  color: #333;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+/* Grid Structure
+*********************************/
+.row {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 header {
-  font-family: 'Ubuntu';
-  padding: 50px 10px;
-  color: #fff;
-  font-size: 25px;
-  text-align: center;
-/*
-   * Note the use of the `main-color`
-   * variable and the `darken` function
-   */
-  background-color: #ebebeb;
-  border-bottom: 1px solid #a5a5a5;
-  text-shadow: 0px -1px 0px #a5a5a5;
+  width: 100%;
+  height: 400px;
+  position: relative;
+  background: url("http://2013.hackference.co.uk/img/front_banner.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 header img {
-  width: 100%;
-}
-@media screen and (min-width: 450px) {
-  header img {
-    width: 50%;
-  }
-}
-@media screen and (min-width: 750px) {
-  header img {
-    width: 350px;
-  }
+  max-width: 500px;
 }
 .container {
+  max-width: 1000px;
   width: 90%;
-  margin: 50px auto;
-  overflow: hidden;
+  height: auto;
+  margin: 0 auto;
 }
-@media screen and (min-width: 750px) {
-  .container {
-    width: 750px;
-  }
-}
-.main-content {
-  float: left;
-  width: 60%;
-}
-.main-content p {
-  margin-bottom: 20px;
-}
-@media screen and (max-width: 450px) {
-  .main-content {
-    width: 100%;
-    float: none;
-    margin-bottom: 20px;
-  }
-}
-.main-content ul.speakers {
-  padding: 0px;
-}
-.main-content ul.speakers li {
-  display: inline-block;
-  text-align: center;
+.half {
   width: 50%;
+  height: auto;
+  float: left;
 }
-@media screen and (min-width: 750px) {
-  .main-content ul.speakers li {
-    width: 33%;
-  }
+.two-third {
+  width: 65%;
+  height: auto;
+  float: left;
+  margin-right: 2%;
+}
+.third {
+  width: 33%;
+  height: auto;
+  float: left;
+  padding: 0 2em;
+}
+.quarter {
+  width: 25%;
+  height: auto;
+  float: left;
+  padding: 1em;
+}
+footer {
+  width: 100%;
+  height: auto;
+  background-color: rgba(27,27,27,0.9);
+  color: #f9f9f9;
+}
+.sidebar {
+  padding: 1em 0;
+}
+.widget {
+  margin-bottom: 3em;
+}
+/* Positioning
+*********************************/
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.fixed {
+  position: fixed;
+  float: left;
+}
+.perfect {
+  width: 80%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.padding {
+  padding: 1em 0;
+}
+/* Speakers
+*********************************/
+.speaker {
+  list-style: none;
+}
+.quarter img {
+  max-width: 90px !important;
+}
+.quarter p {
+  margin: 0;
+}
+/* Typography
+*********************************/
+h1 {
+  font-size: 40px;
+}
+h2 {
+  font-size: 28px;
+  color: #00a44c;
+}
+p {
+  font-size: 18px;
+  line-height: 1.6;
 }
 a {
   text-decoration: none;
-  color: #4a8acc;
+  font-size: 14px;
+  color: #00a44c;
 }
-a:visited {
-  color: #4a8acc;
+footer p {
+  padding: 1em 0;
+  font-size: 12px;
 }
-.sidebar {
-  float: left;
-  width: 40%;
+.sidebar h2 {
+  color: #323131;
 }
-@media screen and (max-width: 450px) {
-  .sidebar {
-    width: 100%;
-    float: none;
-  }
-}
-.sidebar .widget {
-  margin-bottom: 20px;
-/*
-     * Note the lack of vendor
-     * prefixes here. Nib will
-     * add them for us
-     */
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
-  border: 1px solid #ccc;
-  margin-left: 20px;
-  background-color: #fff;
-  -webkit-box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
-  box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.8), 0px 3px 0px -2px rgba(0,0,0,0.1);
-}
-.sidebar .widget form.subscribe {
-  display: block;
-}
-.sidebar .widget form.subscribe label {
-  padding: 0px 10px;
-  display: block;
-  clear: both;
-}
-.sidebar .widget form.subscribe label input {
-  float: right;
-  width: 60%;
-}
-.sidebar .widget form.subscribe button.btn {
-  clear: both;
-  display: block;
-  margin: 5px auto;
-  margin-top: 18px;
-  margin-bottom: 15px;
-}
-@media screen and (max-width: 450px) {
-  .sidebar .widget {
-    margin-left: 0;
-  }
-}
-.sidebar .widget h2 {
-  font-family: 'Ubuntu';
-  margin: 13px 10px 4px;
-  padding-bottom: 10px;
-  border-bottom: 1px dotted #ddd;
-  -webkit-border-radius: 2px 2px 0px 0px;
-  border-radius: 2px 2px 0px 0px;
-  margin-bottom: 10px;
-}
-.sidebar .widget img {
-  width: 90%;
-  display: block;
-  margin: 20px auto;
-}
-.sidebar .widget p {
-  font-size: 13px;
-  padding: 0px 10px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-p {
-  line-height: 1.8;
-}
-footer {
-  width: 90%;
-  margin: 50px auto;
-  border-top: 1px dotted #ccc;
-  padding-top: 5px;
-  font-size: 13px;
-}
-@media screen and (min-width: 750px) {
-  footer {
-    width: 750px;
-  }
+/* Form
+*********************************/
+input {
+  width: 100%;
+  height: auto;
+  padding: 1em;
+  background-color: #e0e0e0;
+  border: 0;
+  outline: 0;
+  color: #383938;
+  margin-bottom: 1em;
+  font-family: 'Montserrat', sans-serif;
 }
 .btn {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.428571429;
-  white-space: nowrap;
-  vertical-align: middle;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  -webkit-border-radius: 4px;
-  border-radius: 4px;
-  -webkit-user-select: none;
-  color: #fff;
-  background-color: #428bca;
-  border-color: #357ebd;
+  padding: 1em 1.8em;
+  outline: none;
+  border: none;
+  background: #00a44c;
+  color: #f9f9f9;
+}
+/* Form
+*********************************/
+iframe {
+  width: 100%;
+  height: auto;
+}
+/* Media Query
+*********************************/
+@media screen and (max-width: 900px) {
+  .two-third {
+    width: 100%;
+  }
+  .third {
+    width: 100%;
+    padding: 0;
+  }
+  .widget {
+    width: 48%;
+    float: left;
+    margin-right: 4%;
+  }
+  .widget:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 700px) {
+  .widget {
+    width: 100%;
+    margin-right: 0;
+  }
+  .quarter {
+    width: 50%;
+  }
+  .quarter img {
+    max-width: none !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  .quarter {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1em;
+  }
 }
 /**
 GitHub Button

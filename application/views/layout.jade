@@ -3,45 +3,53 @@ html
   head
     title #{title}
     link(rel='stylesheet', href='/stylesheets/style.css')
+    link(href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css')
     meta(name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0")
   body
     header
-      img(src='http://2013.hackference.co.uk/img/hackference_logo.png')
-    .container
+      img.perfect(src='http://2013.hackference.co.uk/img/hackference_logo.png')
+    .container.clearfix
       .main-content
-        block content
-      .sidebar
-        .widget
-          form(class="subscribe" action="http://hackference.createsend.com/t/i/s/fjdku/" method="post")
-            h2
-              | Receive updates about #{title}
-            label(for="fieldName")
-              | Name
-              input(id="fieldName" name="cm-name" type="text" placeholder="Your Name")
-            label(for="fieldEmail")
-              | Email
-              input(id="fieldEmail" name="cm-fjdku-fjdku" type="email" placeholder="Your e-mail" required)
-            button(class="btn" type="submit")
-              | Subscribe
-        .widget
-          ul(class="profiles")
-            li
-              a(href="http://lanyrd.com/2014/hackference") Lanyrd
-            li
-              a(href="https://joind.in/event/hackference2014") Joind.in
-            li
-              a(href="http://twitter.com/hackferencebrum") Twitter
-        .widget
-          h2 Sponsors
-          a(href="http://www.winningmoves.com")
-            img(src="/images/winning-moves.jpg")
+        .two-third
+          block content
+      .third
+        .sidebar
+          .widget
+            form(class="subscribe" action="http://hackference.createsend.com/t/i/s/fjdku/" method="post")
+              h2
+                | Receive updates about #{title}
+              label(for="fieldName")
+                | Name
+                input(id="fieldName" name="cm-name" type="text" placeholder="Your Name")
+              label(for="fieldEmail")
+                | Email
+                input(id="fieldEmail" name="cm-fjdku-fjdku" type="email" placeholder="Your e-mail" required)
+              button(class="btn" type="submit")
+                | Subscribe
+          .widget
+            ul(class="profiles")
+              li
+                a(href="http://lanyrd.com/2014/hackference") Lanyrd
+              li
+                a(href="https://joind.in/event/hackference2014") Joind.in
+              li
+                a(href="http://twitter.com/hackferencebrum") Twitter
+          .widget
+            h2 Sponsors
+            a(href="http://www.winningmoves.com")
+              img(src="/images/winning-moves.jpg")
     footer
-      p
+      p.text-center
         | Run by 
         a(href="http://twitter.com/ukmadlz") Mike Elsmore @ukmadlz
         |  hosted on 
         a(href="http://heroku.com") Heroku
-      p
+      p.text-center
+        | Design by 
+        a(href="http://twitter.com/luke_holloway") @luke_holloway
+        |  of 
+        a(href="http://www.b9media.co.uk") B9media
+      p.text-center
         | Photos (with thanks) by 
         a(href="http://www.flickr.com/photos/andypiper/sets/72157635300181024/") Andy Piper
         |  
