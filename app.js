@@ -58,7 +58,8 @@ app.get('/', function (req, res) {
                 var speaker = {
                     'name':returnObj[i].title,
                     'image':returnObj[i].image,
-                    'twitter':twitterUrl
+                    'twitter':twitterUrl,
+                    'break':(((counter+1)%4==0)?'clearfix':'')
                 };
                 speakerObject[counter] = speaker;
                 counter++;
