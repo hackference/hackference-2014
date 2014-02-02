@@ -4,11 +4,6 @@
 @import 'nib'
 
 /*
- * Grab a custom font from Google
- */
-//@import url('http://fonts.googleapis.com/css?family=Lato|Ubuntu')
-
-/*
  * Nib provides a CSS reset
  */
 global-reset()
@@ -79,9 +74,8 @@ header
   .opacity
     background-color:rgba(0,0,0,0.7);
     height:400px;
-
-header a img
-  max-width 500px
+  a img
+    max-width 500px
 
 .container
   max-width 1000px
@@ -175,11 +169,11 @@ nav
 .speaker
   list-style: none
 
-.quarter img
-  max-width 90px !important
-
-.quarter p
-  margin 0
+.quarter
+  img
+    max-width 90px !important
+  p
+    margin 0
 
 
 /* Typography
@@ -279,7 +273,7 @@ iframe
 
 /**
 GitHub Button
-**/
+*********************************/
 #github
   left -65px
   height 30px

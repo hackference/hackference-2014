@@ -14,7 +14,7 @@ block content
       | We will list more as they become confirmed.
     .speakers.clearfix
       each val, index in speakerObject
-        .quarter
+        .quarter.text-center
           img(src=val.image alt=val.name title=val.name)
           p
             a(href=val.twitter alt=val.name title=val.name target="_blank")=val.name

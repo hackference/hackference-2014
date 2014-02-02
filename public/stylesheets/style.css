@@ -2,9 +2,6 @@
  * Import nib
  */
 /*
- * Grab a custom font from Google
- */
-/*
  * Nib provides a CSS reset
  */
 html,
@@ -359,7 +356,7 @@ iframe {
 }
 /**
 GitHub Button
-**/
+*********************************/
 #github {
   left: -65px;
   height: 30px;
