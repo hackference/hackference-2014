@@ -238,6 +238,26 @@ iframe
   height auto
 
 
+/* Nav
+*********************************/
+
+
+header nav
+  background #000000
+  z-index 999999
+  text-align center
+  li
+    width 12.5%
+    text-align center
+    a
+      display table
+      span
+        display table-cell
+        vertical-align middle
+        text-align center
+      &:hover
+        color #ffffff
+
 
 /* Media Query
 *********************************/
@@ -264,6 +284,8 @@ iframe
     width 50%
   .quarter img
     max-width none !important
+  header nav li a span
+    display none
 
 @media screen and (max-width: 380px)
   .quarter

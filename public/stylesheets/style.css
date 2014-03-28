@@ -316,6 +316,28 @@ iframe {
   width: 100%;
   height: auto;
 }
+/* Nav
+*********************************/
+header nav {
+  background: #000;
+  z-index: 999999;
+  text-align: center;
+}
+header nav li {
+  width: 12.5%;
+  text-align: center;
+}
+header nav li a {
+  display: table;
+}
+header nav li a span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+header nav li a:hover {
+  color: #fff;
+}
 /* Media Query
 *********************************/
 @media screen and (max-width: 900px) {
@@ -345,6 +367,9 @@ iframe {
   }
   .quarter img {
     max-width: none !important;
+  }
+  header nav li a span {
+    display: none;
   }
 }
 @media screen and (max-width: 380px) {
