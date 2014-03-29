@@ -1,0 +1,16 @@
+{
+	"speakers":[
+		{
+			"id":"cbetta",
+			"href":"/speakers/cbetta.json"
+		},
+		{
+			"id":"teabass",
+			"href":"/speakers/teabass.json"
+		},
+		{
+			"id":"andrewdlindsay",
+			"href":"/speakers/andrewdlindsay.json"
+		}
+	]
+}

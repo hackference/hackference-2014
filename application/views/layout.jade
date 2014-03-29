@@ -7,7 +7,7 @@ html
     meta(name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0")
     link(href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css", rel="stylesheet")
   body
-    header
+    header(id="#{page}")
       .opacity
         a(href="/")
           img.perfect(src='/images/hackference_logo.png')
@@ -27,7 +27,7 @@ html
                 i.fa.fa-2x.fa-users
                 span &nbsp;Speakers
             li
-              a(href="/shedule" title="Shedule" alt="Schedule" disable)
+              a( title="Shedule" alt="Schedule" disable)
                 i.fa.fa-2x.fa-calendar
                 span &nbsp;Schedule
             li
@@ -42,6 +42,8 @@ html
               a(href="/sponsors" title="Sponsors" alt="Sponsors")
                 i.fa.fa-2x.fa-trophy
                 span &nbsp;Sponsors
+        .container
+          p.text-center.padding 19 / 20 / 21 September 2014
     .container.clearfix
       .main-content
         .two-third

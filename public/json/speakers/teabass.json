@@ -1,0 +1,12 @@
+{
+	"id":"teabass",
+	"name":"Andrew Nessbit",
+	"image":"/images/speakers/teabass.jpg",
+	"title":"GitHub Developer.",
+	"bio":"Andrew is developer at GitHub, based in Bath, England. He spends most of his days programming in Ruby, playing with Node.js, contributing to open source projects and organising local developer user groups. He also aspires to one day take over the world with a fleet of JavaScript powered quadcopters.",
+	"links":{
+		"twitter":"https://twitter.com/teabass",
+		"github":"https://github.com/andrew",
+		"personal":"http://nesbitt.io/"
+	}
+}

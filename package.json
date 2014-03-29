@@ -1,13 +1,13 @@
 {
-	"name": "Hackference2014",
-	"version": "0.0.1",
-	"description": "Hackference 2014 is a conference to help developers and hackers learn new skills and have fun playing with code",
-	"dependencies": {
-		"express": "3.x",
-		"jade": "*",
-		"stylus": "*",
-		"nib": "*",
-		"http":"*",
-		"passport":"*"
-	}
+  "name": "Hackference2014",
+  "version": "0.0.1",
+  "description": "Hackference 2014 is a conference to help developers and hackers learn new skills and have fun playing with code",
+  "dependencies": {
+    "express": "3.x",
+    "jade": "*",
+    "stylus": "*",
+    "nib": "*",
+    "http": "*",
+    "async": "~0.4.0"
+  }
 }

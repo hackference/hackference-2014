@@ -10,7 +10,6 @@
 var express = require('express'),
     stylus = require('stylus'),
     nib = require('nib'),
-    passport = require('passport'),
     fs = require('fs');
 
 /* Set Up App */
@@ -37,53 +36,121 @@ app.use(express.logger());
 app.locals({
     title: 'Hackference 2.0.14',
     phone: '1-250-858-9990',
-    email: 'mike@hackference.co.uk'
+    email: 'mike@hackference.co.uk',
+    jsonpath: __dirname+'/public/json'
 });
 
 // Index
 app.get('/', function (req, res) {
 
-    // Process speaker list - Ignore myself
-    var http = require('http');
-    var url = 'http://lanyrd.com/2014/hackference/speakers/46e95581d4f23c37.v1.json';
+    var async = require('async');
 
-    http.get(url, function(response) {
-        var body = '';
+    var speakerObject = {};
 
-        response.on('data', function(chunk) {
-            body += chunk;
-        });
+    fs.readFile(app.locals.jsonpath+'/speakers.json','utf8',function(err,data){
 
-        response.on('end', function() {
-            var lanyrdResponse = JSON.parse(body).speakers;
-            var counter = 0;
-            var speakerObject = {};
-            var speakerImagePath = './public/images/speakers/'
-            for(var i = 0; i < lanyrdResponse.length; i++){
-                if(lanyrdResponse[i].name !== 'Michael Elsmore'){
+        data = JSON.parse(data);
+        
+        var speakerArray = Array();
+        for(var i=0;i<data.speakers.length;i++){
+            speakerArray[i] = app.locals.jsonpath+data.speakers[i].href;
+        }
 
-                    var twitter = lanyrdResponse[i].twitter.substring(1);
+        var counter = 0;
 
-                    var speaker_image = (fs.existsSync(speakerImagePath+twitter+'.jpg'))?(speakerImagePath+twitter+'.jpg').substring(8):lanyrdResponse[i].image_75;
+        async.eachSeries(
+        // Pass items to iterate over
+        speakerArray,
+        // Pass iterator function that is called for each item
+        function(filename, cb) {
+        
+            fs.readFile(filename,'utf8',function(err,speakerData){
+
+                if (!err) {
+
+                    speakerData = JSON.parse(speakerData);
 
                     var speaker = {
-                        'name':lanyrdResponse[i].name,
-                        'image':speaker_image,
-                        'twitter':'http://twitter.com/'+twitter,
+                        'name':speakerData.name,
+                        'image':speakerData.image,
+                        'link':speakerData.links.twitter,
                         'break':(((counter+1)%4==0)?'clearfix':'')
                     };
+
                     speakerObject[counter] = speaker;
-                    counter++;
                 }
-            }
+
+                // Old skool
+                counter++;
+
+                // Calling cb makes it go to the next item.
+                cb(err);
+            });
+        },
+        // Final callback after each item has been iterated over.
+        function(err) {
+
+            var speaker = {
+                'name':'More Soon',
+                'link':'/speakers',
+                'image':'http://placehold.it/300/2f2f2f/ebebeb&text=%7B+More+Soon+%7D',
+                'break':(((speakerObject.length+1)%4==0)?'clearfix':'')
+            };
+            
+            speakerObject[speakerObject.length+1] = speaker;
+
             res.render('index',{
                 'title':app.locals.title,
                 'speakerObject' : speakerObject
-            });
-        });
-    }).on('error', function(e) {
-          console.log("Got error: ", e);
+            }); 
+        }
+        );  
     });
+    // res.render('index',{
+    //     'title':app.locals.title,
+    //     'speakerObject' : speakerObject
+    // });
+    // // Process speaker list - Ignore myself
+    // var http = require('http');
+    // var url = 'http://lanyrd.com/2014/hackference/speakers/46e95581d4f23c37.v1.json';
+
+    // http.get(url, function(response) {
+    //     var body = '';
+
+    //     response.on('data', function(chunk) {
+    //         body += chunk;
+    //     });
+
+    //     response.on('end', function() {
+    //         var lanyrdResponse = JSON.parse(body).speakers;
+    //         var counter = 0;
+    //         var speakerObject = {};
+    //         var speakerImagePath = './public/images/speakers/'
+    //         for(var i = 0; i < lanyrdResponse.length; i++){
+    //             if(lanyrdResponse[i].name !== 'Michael Elsmore'){
+
+    //                 var twitter = lanyrdResponse[i].twitter.substring(1);
+
+    //                 var speaker_image = (fs.existsSync(speakerImagePath+twitter+'.jpg'))?(speakerImagePath+twitter+'.jpg').substring(8):lanyrdResponse[i].image_75;
+
+    //                 var speaker = {
+    //                     'name':lanyrdResponse[i].name,
+    //                     'image':speaker_image,
+    //                     'twitter':'http://twitter.com/'+twitter,
+    //                     'break':(((counter+1)%4==0)?'clearfix':'')
+    //                 };
+    //                 speakerObject[counter] = speaker;
+    //                 counter++;
+    //             }
+    //         }
+    //         res.render('index',{
+    //             'title':app.locals.title,
+    //             'speakerObject' : speakerObject
+    //         });
+    //     });
+    // }).on('error', function(e) {
+    //       console.log("Got error: ", e);
+    // });
 });
 
 // Start Listening

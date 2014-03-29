@@ -142,10 +142,16 @@ img {
   width: 100%;
   height: auto;
 }
+a img {
+  border: 0;
+}
 .clearfix:after {
   content: '';
   display: block;
   clear: both;
+}
+p a {
+  font-size: inherit;
 }
 /* Grid Structure
 *********************************/
@@ -157,7 +163,7 @@ img {
 header {
   width: 100%;
   position: relative;
-  background: url("http://2013.hackference.co.uk/img/front_banner.jpg") no-repeat center center fixed;
+  background: url("/images/backgrounds/front_banner.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -265,6 +271,9 @@ nav .container ul li {
 .quarter p {
   margin: 0;
 }
+.quarter p a {
+  font-size: 0.8em;
+}
 /* Typography
 *********************************/
 h1 {
@@ -358,6 +367,9 @@ header nav li a:hover {
   }
 }
 @media screen and (max-width: 700px) {
+  .half {
+    width: 100%;
+  }
   .widget {
     width: 100%;
     margin-right: 0;
