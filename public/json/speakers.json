@@ -11,6 +11,10 @@
 		{
 			"id":"andrewdlindsay",
 			"href":"/speakers/andrewdlindsay.json"
+		},
+		{
+			"id":"andypiper",
+			"href":"/speakers/andypiper.json"
 		}
 	]
 }

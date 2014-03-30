@@ -60,6 +60,9 @@ a
   display block
   clear both
 
+.clear-float
+  clear both
+
 p
   a
     font-size inherit
@@ -159,6 +162,19 @@ footer
 .padding
   padding 1em 0
 
+/* Header
+*********************************/
+
+
+header#Speakers
+  background url('/images/backgrounds/speakers.jpg') no-repeat center center fixed 
+  background-size cover
+
+header#Tickets
+  background url('/images/backgrounds/tickets.jpg') no-repeat center center fixed 
+  background-size cover
+
+
 /* Navigation
 *********************************/
 nav
@@ -194,7 +210,7 @@ nav
 .speakers
   .quarter
     img
-      max-width 90px !important
+      max-width 90px
     p
       margin 0
       a
@@ -310,7 +326,7 @@ ul.profiles
   .quarter img
     max-width none !important
   header nav li a span
-    display none
+    display none !important
 
 @media screen and (max-width: 380px)
   .quarter

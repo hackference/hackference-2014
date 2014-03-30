@@ -1,0 +1,12 @@
+{
+	"id":"andypiper",
+	"name":"Andy Piper",
+	"image":"/images/speakers/andypiper.jpg",
+	"title":"Developer Advocate at Twitter.",
+	"bio":"Coming Soon",
+	"links":{
+		"twitter":"https://twitter.com/andypiper",
+		"github":"https://github.com/andypiper",
+		"personal":"http://about.me/andypiper"
+	}
+}

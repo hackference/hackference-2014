@@ -150,6 +150,9 @@ a img {
   display: block;
   clear: both;
 }
+.clear-float {
+  clear: both;
+}
 p a {
   font-size: inherit;
 }
@@ -251,6 +254,20 @@ footer {
 .padding {
   padding: 1em 0;
 }
+/* Header
+*********************************/
+header#Speakers {
+  background: url("/images/backgrounds/speakers.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+header#Tickets {
+  background: url("/images/backgrounds/tickets.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
 /* Navigation
 *********************************/
 nav {
@@ -285,7 +302,7 @@ nav .container ul li a:hover {
   list-style: none;
 }
 .speakers .quarter img {
-  max-width: 90px !important;
+  max-width: 90px;
 }
 .speakers .quarter p {
   margin: 0;
@@ -394,7 +411,7 @@ ul.profiles li {
     max-width: none !important;
   }
   header nav li a span {
-    display: none;
+    display: none !important;
   }
 }
 @media screen and (max-width: 380px) {

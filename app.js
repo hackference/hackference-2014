@@ -73,8 +73,8 @@ app.get('/', function (req, res) {
                     var speaker = {
                         'name':speakerData.name,
                         'image':speakerData.image,
-                        'link':speakerData.links.twitter,
-                        'break':(((counter+1)%4==0)?'clearfix':'')
+                        'link':"/speakers#"+speakerData.id,
+                        'break':(((counter+1)%4==0)?'clear-float':'')
                     };
 
                     speakerObject[counter] = speaker;
@@ -115,6 +115,59 @@ app.get('/tickets', function (req, res) {
         'page':'Tickets'
     }); 
 
+});
+
+// Speakers
+app.get('/speakers', function (req, res) {
+
+    var async = require('async');
+
+    var speakerObject = {};
+
+    fs.readFile(app.locals.jsonpath+'/speakers.json','utf8',function(err,data){
+
+        data = JSON.parse(data);
+        
+        var speakerArray = Array();
+        for(var i=0;i<data.speakers.length;i++){
+            speakerArray[i] = app.locals.jsonpath+data.speakers[i].href;
+        }
+
+        var counter = 0;
+
+        async.eachSeries(
+        // Pass items to iterate over
+        speakerArray,
+        // Pass iterator function that is called for each item
+        function(filename, cb) {
+        
+            fs.readFile(filename,'utf8',function(err,speakerData){
+
+                if (!err) {
+
+                    speakerData = JSON.parse(speakerData);
+
+                    speakerObject[counter] = speakerData;
+                }
+
+                // Old skool
+                counter++;
+
+                // Calling cb makes it go to the next item.
+                cb(err);
+            });
+        },
+        // Final callback after each item has been iterated over.
+        function(err) {
+
+            res.render('speakers',{
+                'title':app.locals.title,
+                'page':'Speakers',
+                'speakerObject' : speakerObject
+            }); 
+
+        });  
+    });
 });
 
 // Start Listening
