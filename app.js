@@ -106,51 +106,6 @@ app.get('/', function (req, res) {
         }
         );  
     });
-    // res.render('index',{
-    //     'title':app.locals.title,
-    //     'speakerObject' : speakerObject
-    // });
-    // // Process speaker list - Ignore myself
-    // var http = require('http');
-    // var url = 'http://lanyrd.com/2014/hackference/speakers/46e95581d4f23c37.v1.json';
-
-    // http.get(url, function(response) {
-    //     var body = '';
-
-    //     response.on('data', function(chunk) {
-    //         body += chunk;
-    //     });
-
-    //     response.on('end', function() {
-    //         var lanyrdResponse = JSON.parse(body).speakers;
-    //         var counter = 0;
-    //         var speakerObject = {};
-    //         var speakerImagePath = './public/images/speakers/'
-    //         for(var i = 0; i < lanyrdResponse.length; i++){
-    //             if(lanyrdResponse[i].name !== 'Michael Elsmore'){
-
-    //                 var twitter = lanyrdResponse[i].twitter.substring(1);
-
-    //                 var speaker_image = (fs.existsSync(speakerImagePath+twitter+'.jpg'))?(speakerImagePath+twitter+'.jpg').substring(8):lanyrdResponse[i].image_75;
-
-    //                 var speaker = {
-    //                     'name':lanyrdResponse[i].name,
-    //                     'image':speaker_image,
-    //                     'twitter':'http://twitter.com/'+twitter,
-    //                     'break':(((counter+1)%4==0)?'clearfix':'')
-    //                 };
-    //                 speakerObject[counter] = speaker;
-    //                 counter++;
-    //             }
-    //         }
-    //         res.render('index',{
-    //             'title':app.locals.title,
-    //             'speakerObject' : speakerObject
-    //         });
-    //     });
-    // }).on('error', function(e) {
-    //       console.log("Got error: ", e);
-    // });
 });
 
 // Start Listening
