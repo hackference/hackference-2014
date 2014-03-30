@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 html
   head
-    title #{title}
+    title #{title} | #{page}
     link(rel='stylesheet', href='/stylesheets/style.css')
     link(href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css')
     meta(name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0")
@@ -43,7 +43,7 @@ html
                 i.fa.fa-2x.fa-trophy
                 span &nbsp;Sponsors
         .container
-          p.text-center.padding 19 / 20 / 21 September 2014
+          p.text-center.padding.date 19 / 20 / 21 September 2014
     .container.clearfix
       .main-content
         .two-third
@@ -72,8 +72,9 @@ html
                 a(href="http://twitter.com/hackferencebrum") Twitter
           .widget
             h2 Sponsors
-            a(href="http://www.winningmoves.com")
-              img(src="/images/winning-moves.jpg")
+            .half
+              a(href="http://www.winningmoves.com")
+                img(src="/images/sponsors/winning-moves.jpg")
     footer
       p.text-center
         | Run by 

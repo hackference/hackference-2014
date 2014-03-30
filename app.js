@@ -103,9 +103,18 @@ app.get('/', function (req, res) {
                 'title':app.locals.title,
                 'speakerObject' : speakerObject
             }); 
-        }
-        );  
+        });  
     });
+});
+
+// Tickets
+app.get('/tickets', function (req, res) {
+
+    res.render('tickets',{
+        'title':app.locals.title,
+        'page':'Tickets'
+    }); 
+
 });
 
 // Start Listening
