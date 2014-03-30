@@ -284,13 +284,13 @@ nav .container ul li a:hover {
 .speaker {
   list-style: none;
 }
-.quarter img {
+.speakers .quarter img {
   max-width: 90px !important;
 }
-.quarter p {
+.speakers .quarter p {
   margin: 0;
 }
-.quarter p a {
+.speakers .quarter p a {
   font-size: 0.8em;
 }
 /* Terms
@@ -342,6 +342,13 @@ input {
   border: none;
   background: #00a44c;
   color: #f9f9f9;
+}
+/* Form
+*********************************/
+ul.profiles li {
+  display: inline-block;
+  width: 50%;
+  text-align: center;
 }
 /* Sponsors
 *********************************/
