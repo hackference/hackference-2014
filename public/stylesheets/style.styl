@@ -163,13 +163,27 @@ footer
 *********************************/
 nav
   background #000000
+  z-index 999999
+  text-align center
   .container
+    .date
+      padding 0.3em 0
+      color #00a44c 
     ul
-      // width 80%
-      // margin 0 10%
       li
+        width 12.5%
+        text-align center
         padding 10px
         display inline-block
+        a
+          display table
+          span
+            display table-cell
+            vertical-align middle
+            text-align center
+          &:hover
+            color #ffffff
+
 
 /* Speakers
 *********************************/
@@ -185,6 +199,12 @@ nav
     a
       font-size 0.8em
 
+/* Terms
+*********************************/
+
+ul.term-points
+  li
+    padding 0.5em 1em
 
 /* Typography
 *********************************/
@@ -239,36 +259,18 @@ input
 
 
 
-/* Form
+/* Sponsors
 *********************************/
 
 
-iframe
-  width 100%
-
-
-/* Nav
-*********************************/
-
-
-header nav
-  background #000000
-  z-index 999999
-  text-align center
-  li
-    width 12.5%
-    text-align center
+.widget.sponsors
+  .half
+    display table
     a
-      display table
-      span
-        display table-cell
-        vertical-align middle
-        text-align center
-      &:hover
-        color #ffffff
-  .date
-    padding 0.3em 0
-    color #00a44c 
+      display table-cell
+      vertical-align middle
+      text-align center
+
 
 
 /* Media Query

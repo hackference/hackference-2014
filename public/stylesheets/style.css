@@ -255,10 +255,29 @@ footer {
 *********************************/
 nav {
   background: #000;
+  z-index: 999999;
+  text-align: center;
+}
+nav .container .date {
+  padding: 0.3em 0;
+  color: #00a44c;
 }
 nav .container ul li {
+  width: 12.5%;
+  text-align: center;
   padding: 10px;
   display: inline-block;
+}
+nav .container ul li a {
+  display: table;
+}
+nav .container ul li a span {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+nav .container ul li a:hover {
+  color: #fff;
 }
 /* Speakers
 *********************************/
@@ -273,6 +292,11 @@ nav .container ul li {
 }
 .quarter p a {
   font-size: 0.8em;
+}
+/* Terms
+*********************************/
+ul.term-points li {
+  padding: 0.5em 1em;
 }
 /* Typography
 *********************************/
@@ -319,36 +343,15 @@ input {
   background: #00a44c;
   color: #f9f9f9;
 }
-/* Form
+/* Sponsors
 *********************************/
-iframe {
-  width: 100%;
-}
-/* Nav
-*********************************/
-header nav {
-  background: #000;
-  z-index: 999999;
-  text-align: center;
-}
-header nav li {
-  width: 12.5%;
-  text-align: center;
-}
-header nav li a {
+.widget.sponsors .half {
   display: table;
 }
-header nav li a span {
+.widget.sponsors .half a {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
-}
-header nav li a:hover {
-  color: #fff;
-}
-header nav .date {
-  padding: 0.3em 0;
-  color: #00a44c;
 }
 /* Media Query
 *********************************/
