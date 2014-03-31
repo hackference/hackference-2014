@@ -268,6 +268,12 @@ header#Tickets {
   -moz-background-size: cover;
   background-size: cover;
 }
+header#Sponsors {
+  background: url("/images/backgrounds/sponsors.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
 /* Navigation
 *********************************/
 nav {
@@ -449,6 +455,9 @@ ul.profiles li {
   display: table-cell;
   vertical-align: middle;
   text-align: center;
+}
+.widget.sponsors p {
+  font-size: 0.8em;
 }
 /* Media Query
 *********************************/
