@@ -32,4 +32,10 @@ $(document).ready(function() {
     $('.flipper .back').on('click',function(){
         $(this).parent().mouseleave();
     });
+    /* Accordion */
+    $('#accordion').accordion({
+        heightStyle: "content"
+    });
+    /* Sponsor */
+    $('h3'+location.hash).click();
 });

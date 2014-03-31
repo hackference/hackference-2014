@@ -188,6 +188,36 @@ app.get('/speakers', function (req, res) {
     });
 });
 
+// Hack
+app.get('/hack', function (req, res) {
+
+    res.render('hack',{
+        'title':app.locals.title,
+        'page':'Hack'
+    }); 
+
+});
+
+// Information
+app.get('/information', function (req, res) {
+
+    res.render('information',{
+        'title':app.locals.title,
+        'page':'Info'
+    }); 
+
+});
+
+// Sponsors
+app.get('/sponsors', function (req, res) {
+
+    res.render('sponsors',{
+        'title':app.locals.title,
+        'page':'Sponsors'
+    }); 
+
+});
+
 // Start Listening
 var port = process.env.PORT || 3000;
 app.listen(port, function() {

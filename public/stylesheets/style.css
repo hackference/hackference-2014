@@ -269,7 +269,13 @@ header#Tickets {
   background-size: cover;
 }
 header#Sponsors {
-  background: url("/images/backgrounds/sponsors.jpg") no-repeat center center fixed;
+  background: url("/images/backgrounds/sponsors2.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+header#Hack {
+  background: url("/images/backgrounds/hack.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
@@ -458,6 +464,13 @@ ul.profiles li {
 }
 .widget.sponsors p {
   font-size: 0.8em;
+}
+#accordion ul li {
+  margin: 0.5em 0.8em;
+}
+#accordion .price {
+  color: #00a44c;
+  background: #000;
 }
 /* Media Query
 *********************************/
