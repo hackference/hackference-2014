@@ -147,6 +147,24 @@ app.get('/speakers', function (req, res) {
 
                     speakerData = JSON.parse(speakerData);
 
+                    var speakerLinks = {};
+
+                    for(var key in speakerData.links){
+                        var link = speakerData.links[key];
+                        switch(key) {
+                            case 'github':
+                              key = 'github-alt';
+                              break;
+                            case 'personal':
+                              key = 'home';
+                              break;
+                            default:
+                        }
+                        speakerLinks['fa-'+key] = link;
+                    }
+
+                    speakerData.links = speakerLinks;
+                    console.log(speakerData);
                     speakerObject[counter] = speakerData;
                 }
 

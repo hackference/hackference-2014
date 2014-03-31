@@ -15,6 +15,10 @@
 		{
 			"id":"andypiper",
 			"href":"/speakers/andypiper.json"
+		},
+		{
+			"id":"jr0cket",
+			"href":"/speakers/jr0cket.json"
 		}
 	]
 }

@@ -1,5 +1,5 @@
-/* Nav stuff */
-$(function() {
+$(document).ready(function() {
+    /* Nav stuff */
     // Stick the #nav to the top of the window
     var nav = $('header nav');
     var navHomeY = nav.offset().top;
@@ -24,5 +24,12 @@ $(function() {
             });
             isFixed = false;
         }
+    });
+    /* Speaker Flip */
+    $('.flipper .front').on('click',function(){
+        $(this).parent().mouseenter();
+    });
+    $('.flipper .back').on('click',function(){
+        $(this).parent().mouseleave();
     });
 });

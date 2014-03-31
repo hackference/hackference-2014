@@ -1,0 +1,12 @@
+{
+	"id":"jr0cket",
+	"name":"John Stevenson",
+	"image":"/images/speakers/jr0cket.jpg",
+	"title":"Developer Advocate for Heroku and Salesforce.",
+	"bio":"Coming Soon",
+	"links":{
+		"twitter":"https://twitter.com/jr0cket",
+		"github":"https://github.com/jr0cket",
+		"personal":"http://jr0cket.github.io/"
+	}
+}

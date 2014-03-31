@@ -15,7 +15,20 @@ block content
       each val, index in speakerObject
         .half.text-center
           a(name=val.id)
-          a(href=val.link alt=val.name title=val.name)
-            img(src=val.image alt=val.name title=val.name)
-          p
-            a(href=val.link alt=val.name title=val.name)=val.name
+          .flip-container(ontouchstart="this.classList.toggle('hover');")
+            .flipper
+              .front
+                a(href=val.link alt=val.name title=val.name)
+                  img(src=val.image alt=val.name title=val.name)
+                p
+                  a(alt=val.name title=val.name)=val.name
+              .back
+                p
+                  a(alt=val.name title=val.name)=val.name
+                p.title
+                  =val.title
+                each url, image in val.links
+                  a(href=url, target="_blank")
+                    i.fa.fa-2x(class=image)
+                p.bio
+                  =val.bio
