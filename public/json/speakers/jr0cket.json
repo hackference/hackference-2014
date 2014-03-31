@@ -1,12 +1,13 @@
 {
 	"id":"jr0cket",
 	"name":"John Stevenson",
-	"image":"/images/speakers/jr0cket.jpg",
+	"image":"/images/speakers/jr0cket.png",
 	"title":"Developer Advocate for Heroku and Salesforce.",
-	"bio":"Coming Soon",
+	"bio":"John is a developer in the community who loves learning new stuff and helping others get the most out of technology. He is the author of Clojure made Simple and blogs on developer tools & Clojure",
 	"links":{
 		"twitter":"https://twitter.com/jr0cket",
 		"github":"https://github.com/jr0cket",
-		"personal":"http://jr0cket.github.io/"
+		"personal":"http://jr0cket.co.uk/",
+		"book":"http://developerpress.com/en/clojure-made-simple-introduction-clojure"
 	}
 }
