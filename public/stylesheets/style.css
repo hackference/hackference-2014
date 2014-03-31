@@ -472,6 +472,9 @@ ul.profiles li {
   color: #00a44c;
   background: #000;
 }
+.other-sponsors li {
+  margin: 0.5em 0.8em;
+}
 /* Media Query
 *********************************/
 @media screen and (max-width: 900px) {
