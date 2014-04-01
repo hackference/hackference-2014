@@ -23,6 +23,10 @@
 		{
 			"id":"rbin",
 			"href":"/speakers/rbin.json"
+		},
+		{
+			"id":"dizzeehaskell",
+			"href":"/speakers/dizzeehaskell.json"
 		}
 	]
 }

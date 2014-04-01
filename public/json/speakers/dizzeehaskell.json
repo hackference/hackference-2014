@@ -1,0 +1,12 @@
+{
+	"id":"dizzeehaskell",
+	"name":"Laurence E. Day",
+	"image":"/images/speakers/dizzeehaskell.png",
+	"title":"Fourth-year research PhD student at the University of Nottingham.",
+	"bio":"Laurence is a PhD student at the University of Nottingham under the supervision of Professor Graham Hutton. His research revolves around the notion of 'modular compilation' on an axis not usually undertaken by software developers - according to the computational features that a source language can support, rather than designing standalone lexers, parsers, and code generators. Whilst he is currently writing up his doctoral thesis, more generally he is a lazy man, interested in finding the least subset of generic code that will let him do as much as possible so he can browse pictures of doge on Reddit instead. Recently, Laurence spent four months in Portland, OR and Silicon Valley working at Intel Labs with the Programming Systems Laboratory on the Intel Functional Language Compiler, designing an API and runtime for dispatching parallel kernel computations for execution on GPU.",
+	"links":{
+		"twitter":"https://twitter.com/dizzeehaskell",
+		"github":"https://github.com/dizzeehaskell",
+		"personal":"http://www.cs.nott.ac.uk/~led/"
+	}
+}
