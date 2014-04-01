@@ -15,5 +15,6 @@ logs
 results
 build
 .grunt
+.DS_Store
 
 node_modules
