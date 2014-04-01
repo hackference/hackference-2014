@@ -1,0 +1,13 @@
+{
+	"id":"rbin",
+	"name":"Robin Johnson",
+	"image":"/images/speakers/rbin.jpg",
+	"title":"Developer Evangelist at SendGrid.",
+	"bio":"A Polyglot Programmer and Developer Evangelist at SendGrid, currently working amongst the World-wide Developer Community to ease the adoption of the technology. Having spoken at some of the world's leading technical conferences, Robin is building his way to being a player in the London tech scene; attending, speaking at, and even helping organise multiple large events.
+
+Over the last few years Robin Johnson has been involved with some of the Leading Database Providers and Social Gaming and Betting applications to grace the world wide web.  After playing a key part in bootstrapping an Award-Winning Social Gaming startup, Robin is a seasoned Programmer, API Enthusiast and NoSQL advocate.",
+	"links":{
+		"twitter":"https://twitter.com/rbin",
+		"github":"https://github.com/rbin"
+	}
+}

@@ -19,6 +19,10 @@
 		{
 			"id":"jr0cket",
 			"href":"/speakers/jr0cket.json"
+		},
+		{
+			"id":"rbin",
+			"href":"/speakers/rbin.json"
 		}
 	]
 }
