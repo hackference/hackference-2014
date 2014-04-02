@@ -23,18 +23,32 @@ block content
         p
           a(href=val.link alt=val.name title=val.name)=val.name
       div(class=val.break)
-  .row.padding
+  .row.paddingz
     h2 Dates
-    p
+    p 
       | The conference will be on 19th September 2014.
-    p
+    p 
       | The hackathon will be over the weekend of the 20th and 21st September 2014.
   .row.padding
+    h2 Hack Weekend
+    p 
+      | After the conference, the free to attend hack will bring you even more awesome.
+      | A big room full of developers building everything and anything for fun and for learning, all squeezed into less than 48 hours.
+      | You'll have all the knowledge from the conference and fantastic 
+      a(href="/hack#api", title="APIs and SDKs" alt="APIs and SDKs") APIs and SDKs
+      |  from some of the best companies in tech.
+    .text-center
+      br
+      a.btn(href="/tickets#hackathon" title="Hackathon" alt="Hackathons")
+        i.fa.fa-lg.fa-ticket
+        span &nbsp;Register
+  .row.padding
     h2 Information
-    p
+    p 
       | For more information please check out the 
       a(href="/information", alt="Information", title="Information") information page
   .row.padding
     h2 Sponsors
-    p Proudly supported by all following companies
+    p 
+      | Proudly supported by all following companies
   include includes/sponsors
