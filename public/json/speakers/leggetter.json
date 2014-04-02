@@ -1,0 +1,15 @@
+{
+	"id":"leggetter",
+	"name":"Phil Leggetter",
+	"image":"http://www.gravatar.com/avatar/ecc56977271e781991b6172c16248459?s=500g",
+	"title":"Freelance software developer.",
+	"bio":"Phil @leggetter is a Developer Evangelist at Caplin Systems where he's leading the project to open source BladeRunnerJS. He's been using JavaScript as his primary development language since 2001, is the co-author of the Apress title \"Realtime Web Apps\", a contributor to O'Reilly's \"HTML5 Hacks\" and has written articles for Smashing Magazine, .net magazine, Programmable Web, on his own blog and anywhere else he gets an opportunity to create content. Phil's passions include developer experience and productivity, APIs, customer service and helping people realise the benefits realtime web technologies offer when creating the next generation of interactive and engaging web apps.",
+	"links":{
+		"twitter":"https://twitter.com/leggetter",
+		"github":"https://github.com/leggetter",
+		"personal":"http://www.leggetter.co.uk/",
+		"code":"http://www.caplin.com/",
+		"code":"http://bladerunnerjs.org",
+		"book":"http://j.mp/realtime-web-apps-uk"
+	}
+}

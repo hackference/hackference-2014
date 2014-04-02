@@ -25,6 +25,10 @@
 			"href":"/speakers/rbin.json"
 		},
 		{
+			"id":"leggetter",
+			"href":"/speakers/leggetter.json"
+		},
+		{
 			"id":"dizzeehaskell",
 			"href":"/speakers/dizzeehaskell.json"
 		}
