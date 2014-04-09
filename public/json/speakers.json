@@ -29,6 +29,10 @@
 			"href":"/speakers/leggetter.json"
 		},
 		{
+			"id":"samwierema",
+			"href":"/speakers/samwierema.json"
+		},
+		{
 			"id":"dizzeehaskell",
 			"href":"/speakers/dizzeehaskell.json"
 		}
