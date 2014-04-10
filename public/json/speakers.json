@@ -33,6 +33,10 @@
 			"href":"/speakers/samwierema.json"
 		},
 		{
+			"id":"junglebarry",
+			"href":"/speakers/junglebarry.json"
+		},
+		{
 			"id":"dizzeehaskell",
 			"href":"/speakers/dizzeehaskell.json"
 		}
