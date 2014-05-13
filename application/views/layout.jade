@@ -1,143 +1,65 @@
 <!DOCTYPE html>
-html
+html(lang="en")
   head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width")
     title #{title} | #{page}
+    link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    link(href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css')
-    meta(name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0")
-    link(href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css", rel="stylesheet")
-  body
-    header(id="#{page}")
-      .opacity
-        a(href="/")
-          img.perfect(src='/images/hackference_logo.png')
-      nav
-        .container
-          ul
-            li
-              a(href="/" title="Home" alt="Home")
-                i.fa.fa-2x.fa-home
-                span &nbsp;Home
-            li
-              a(href="/tickets" title="Tickets" alt="Tickets")
-                i.fa.fa-2x.fa-ticket
-                span &nbsp;Tickets
-            li
-              a(href="/speakers" title="Speakers" alt="Speakers")
-                i.fa.fa-2x.fa-users
-                span &nbsp;Speakers
-            li
-              a( title="Shedule" alt="Schedule" disable)
-                i.fa.fa-2x.fa-calendar
-                span &nbsp;Schedule
-            li
-              a(href="/hack" title="Hack" alt="Hack")
-                i.fa.fa-2x.fa-wrench
-                span &nbsp;Hack
-            li
-              a(href="/information" title="Information" alt="Information")
-                i.fa.fa-2x.fa-info
-                span &nbsp;Information
-            li
-              a(href="/sponsors" title="Sponsors" alt="Sponsors")
-                i.fa.fa-2x.fa-trophy
-                span &nbsp;Sponsors
-        .container
-          p.text-center.padding.date 19 / 20 / 21 September 2014
-    .container.clearfix
-      .main-content
-        .two-third
-          block content
-      .third
-        .sidebar
-          .widget
-            form(class="subscribe" action="http://hackference.createsend.com/t/i/s/fjdku/" method="post")
-              h2
-                | Receive updates about #{title}
-              label(for="fieldName")
-                | Name
-                input(id="fieldName" name="cm-name" type="text" placeholder="Your Name")
-              label(for="fieldEmail")
-                | Email
-                input(id="fieldEmail" name="cm-fjdku-fjdku" type="email" placeholder="Your e-mail" required)
-              button(class="btn" type="submit")
-                | Subscribe
-          .widget
-            h2 Find us
-            ul(class="profiles")
-              li
-                a(href="http://twitter.com/hackferencebrum")
-                  i.fa.fa-lg.fa-twitter
-                  span &nbsp;Twitter
-              li
-                a(href="https://github.com/hackference/")
-                  i.fa.fa-lg.fa-github-alt
-                  span &nbsp;GitHub
-              li
-                a(href="http://lanyrd.com/2014/hackference")
-                  i.fa.fa-lg.fa-calendar
-                  span &nbsp;Lanyrd
-              li
-                a(href="https://joind.in/event/hackference2014") 
-                  i.fa.fa-lg.fa-calendar
-                  span &nbsp;Joind.in
-          .widget.sponsors
-            h2 Sponsors
-            .row
-              // Platinum
-              a(href="http://developer.paypal.com", title="PayPal Developer", alt="PayPal Developer")
-                img(src="/images/sponsors/paypal-developer.png", title="PayPal Developer", alt="PayPal Developer")
-            .row
-              a(href="/sponsors#Platinum")
-                img(src="http://placehold.it/400x200/2f2f2f/ebebeb&text=%7B+Be+A+Platinum+Sponsor+%7D")
-              p Why not be a 
-                a(href="/sponsors#Platinum") platinum sponsor
-            .row
-              // Gold
-              a(href="/sponsors#Gold")
-                img(src="http://placehold.it/400x200/2f2f2f/ebebeb&text=%7B+Be+A+Gold+Sponsor+%7D")
-            .row
-              // Silver
-              a(href="http://bladerunnerjs.org/")
-                img(src="/images/sponsors/brjs-logo-full-black.png")
-            .row
-              // Silver
-              a(href="/sponsors#Silver")
-                img(src="http://placehold.it/400x200/2f2f2f/ebebeb&text=%7B+Be+A+Silver+Sponsor+%7D")
-            .row
-              // Bronze
-              .half
-                a(href="http://www.winningmoves.com", title="Winning Moves", alt="Winning Moves")
-                  img(src="/images/sponsors/winning-moves.jpg")
-              .half
-                a(href="/sponsors#Bronze")
-                  img(src="http://placehold.it/400x200/2f2f2f/ebebeb&text=%7B+Be+A+Bronze+Sponsor+%7D")
-    footer
-      p.text-center
-        | Run by 
-        a(href="http://twitter.com/ukmadlz") Mike Elsmore @ukmadlz
-        |  hosted on 
-        a(href="http://heroku.com") Heroku
-      p.text-center
-        | Design by 
-        a(href="http://twitter.com/luke_holloway") @luke_holloway
-        |  of 
-        a(href="http://www.b9media.co.uk") B9media
-      p.text-center
-        | Photos (with thanks) by 
-        a(href="http://www.flickr.com/photos/andypiper/sets/72157635300181024/") Andy Piper
-        |  
-        a(href="http://twitter.com/andypiper") @andypiper
-        |  and 
-        a(href="http://www.cassandralane.co.uk/about/") Cassandra Lane
-        |  
-        a(href="http://twitter.com/_cassandralane") @_cassandralane
-    a(id="github" href="https://github.com/hackference/hackference-2014")
-      span Fork me on GitHub!
-      span Fix the horrible code!
+    link(rel='stylesheet', href='/stylesheets/animate.min.css') 
+  body.home.animated.fadeIn
+    .social-bar
+      ul
+        li
+          a(href="https://twitter.com/hackferencebrum") t
+        li
+          a(href="https://github.com/hackference") g
+        li
+          a(href="http://lanyrd.com/2014/hackference") l
+        li
+          a(href="https://joind.in/event/hackference2014") j
+    .site-wrapper.clearfix
+      .wrapper.clearfix
+        header.site-header
+          nav.nav-bar.clearfix
+            ul
+              include includes/menu
+      block content
+      include includes/subscribe
+      footer
+        include includes/sponsors
+        .full.dark-grey
+          .wrapper
+            .third
+              p.text-left &copy;2014 Hackference | Run by 
+                  a(href="https://twitter.com/ukmadlz") Mike Elsmore
+            .third
+              p Photography by 
+                  a(href="https://www.flickr.com/photos/andypiper/sets/72157635300181024/") Andy Piper
+                  |  &amp; 
+                  a(href="http://www.cassandralane.co.uk") Cassandra Lane
+            .third
+              p.text-right Website by 
+                  a(href="http://b9media.co.uk") B9 Media
+                  |  | Hosted on 
+                  a(href="https://www.heroku.com") Heroku
+      .scrolled-nav
+        .wrapper.clearfix
+          a(href="/")
+            img.alt-logo(src="/images/logo.png" alt="logo")
+          .mobile-show
+            a.menu
+              span
+          ul.mobile-hide
+            include includes/menu
+      .site-overlay
+        a.overlay-close close
+        .code-wrapper
+          block tickets
     script(src="http://code.jquery.com/jquery-1.11.0.min.js", type="text/javascript")
     script(src="http://code.jquery.com/ui/1.10.4/jquery-ui.js", type="text/javascript")
-    script(src="/javascript/default.js", type="text/javascript")
+    script(src="/javascript/site.js", type="text/javascript")
+    script(src="/javascript/wow.min.js", type="text/javascript")
     // Tracking shizzle
     script
       !function(g,s,q,r,d){r=g[r]=g[r]||function(){(r.q=r.q||[]).push(arguments)};d=s.createElement(q);q=s.getElementsByTagName(q)[0];d.src='//d1l6p2sc9645hc.cloudfront.net/tracker.js';q.parentNode.insertBefore(d,q)}(window,document,'script','_gs');_gs('GSN-212769-I');(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-41030549-2', 'hackference.co.uk');ga('send', 'pageview');

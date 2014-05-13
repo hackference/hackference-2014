@@ -1,54 +1,45 @@
 extend layout
 block content
-  .row.padding
-    h1 #{title}
-    p
-      | Three days of tech! A day of talks and panels from the best in the world, with a full weekend hackathon to top it.
-      | Aimed totally at bringing more technology to those that love developing with it, giving you more to hack with than before.
-    .text-center
-      br
-      a.btn(href="/tickets" title="Tickets" alt="Tickets")
-        i.fa.fa-lg.fa-ticket
-        span &nbsp;Buy tickets
-  .row.padding
-    h2 Speakers
-    p
-      | Take a look at some of the fantastic people you will get to see and hear from.
-      | We will list more as they become confirmed.
-  .speakers.clearfix
-    each val, index in speakerObject
-      .quarter.text-center
-        a(href=val.link alt=val.name title=val.name)
-          img(src=val.image alt=val.name title=val.name)
-        p
-          a(href=val.link alt=val.name title=val.name)=val.name
-      div(class=val.break)
-  .row.paddingz
-    h2 Dates
-    p 
-      | The conference will be on 19th September 2014.
-    p 
-      | The hackathon will be over the weekend of the 20th and 21st September 2014.
-  .row.padding
-    h2 Hack Weekend
-    p 
-      | After the conference, the free to attend hack will bring you even more awesome.
-      | A big room full of developers building everything and anything for fun and for learning, all squeezed into less than 48 hours.
-      | You'll have all the knowledge from the conference and fantastic 
-      a(href="/hack#api", title="APIs and SDKs" alt="APIs and SDKs") APIs and SDKs
-      |  from some of the best companies in tech.
-    .text-center
-      br
-      a.btn(href="/tickets#hackathon" title="Hackathon" alt="Hackathons")
-        i.fa.fa-lg.fa-ticket
-        span &nbsp;Register
-  .row.padding
-    h2 Information
-    p 
-      | For more information please check out the 
-      a(href="/information", alt="Information", title="Information") information page
-  .row.padding
-    h2 Sponsors
-    p 
-      | Proudly supported by all following companies
-  include includes/sponsors
+  .full.banner.blue-bg
+    img.opacity(src="/images/backgrounds/banner.jpg", alt="banner", class="opacity", width="", height="")
+    .wrapper.clearfix
+      .banner-container.perfect
+        img.logo(src="/images/logo.png", alt="logo", width="", height="")
+        h2.green-text September 19
+          sup th
+          |  - 21
+          sup st
+        button.overlay-toggle
+          a order tickets
+  .full
+    .wrapper.nice-padding.wow.fadeInUp
+      h1 The Hackference
+      p Hackference is a three day technology driven event in the heart of Birmingham. The first day conference will include several talks from leading tech specialists. This will then be followed up by a two day hackathon. We aim to provide developers with new and exciting tools to add to their hacking arsenal.</p>
+      p This year we’re doing things a little differently. Not only will we be showcasing some of the greatest names in the development world, we will also be heading into the front end of the web. Frontend or backend, there is something here for you. Check out our awesome speakers.
+  .full.black-bg.wow.fadeInUp
+    .half
+      img.slight-opacity(src="/images/fazeley.jpg", alt="fazeley")
+      .venue-container.perfect
+        h2 Fazeley Studios
+        h4 conference venue
+        p 191 Fazeley Street, Digbeth, Birmingham, B5 5SE
+          br
+          | www.fazeleystudios.com
+          br
+          a(href="tel:+441212247785") +441212 247785
+          br
+          a(href="http://twitter.com/FazeleySocial") @FazeleySocial
+    .half
+      img.slight-opacity(src="/images/hack.jpg", alt="hack")
+      .venue-container.perfect
+        h2 TBC
+        h4 hack venue
+        //- p 191 Fazeley Street, Digbeth, Birmingham, B5 5SE
+        //-   br
+        //-   | www.fazeleystudios.com
+        //-   br
+        //-   a(href="tel:+441212247785") +441212 247785
+        //-   br
+        //-   a(href="http://twitter.com/FazeleySocial") @FazeleySocial
+block tickets
+  include includes/ticket-conference

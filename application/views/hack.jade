@@ -1,25 +1,51 @@
 extend layout
 block content
-  .row.padding
-    h1 Hack Weekend
-    p What better way to spend a weekend than to build something awesome in the company of people who love to build stuff as well.
-    p The goal of the hack weekend is to have fun and try something new, if you want to try and new language or mash together APIs you've never used, go for it.
-    .text-center
-      br
-      a.btn(href="/tickets" title="Tickets" alt="Tickets")
-        i.fa.fa-lg.fa-ticket
-        span &nbsp;Register
-    br
-    p On the 20th to 21st September, don't miss it!
-  .row.padding
-    h2 Challenges and Prizes
-    p It's challenging enough to finish something in less than two days, but just to give it a nice top we will be giving away a few prizes.
-    p Also, some of the attending APIs and SDKs have challenges or a prize so check those out below
-  .row.padding
-    h2 APIs
-  .row.padding
-    p If you'd like to have your API or SDK available&nbsp;
-      a(href="mailto:mike@hackference.co.uk") email us
-      |  or&nbsp;
-      a(href="http://twitter.com/hackferencebrum" target="_blank") tweet us
-      |  and we will get it organised.
+  .full.hack-banner.blue-bg
+    img.opacity(src="/images/backgrounds/hackference.jpg", alt="Banner")
+    .wrapper.clearfix
+      .hack-banner-container.perfect
+        .half
+          h1 Hackathon
+          h2.green-text September 20
+            sup th
+            |  - 21
+            sup st
+        .half
+          button.overlay-toggle
+            a reserve space
+  .full
+    .wrapper.top-bottom.clearfix
+      h2.green-text Let's hack
+      p What better way to spend a weekend than to build something awesome in the company of people who love to build stuff as well.
+        | The goal of the hack weekend is to have fun and try something new. If you want to try a new language or mash together APIs you've never used, go for it. Oh, and it's free. You have no excuse!
+  .full.black-bg.button-container.height-fix.clearfix
+    img.opacity(src="/images/backgrounds/hack-bg.jpg")
+    .perfect
+      .half.text-center
+        button.api
+          a API's Available
+      .half.text-center
+        button.prize
+          a Challenges &amp; Prizes
+  .api-container
+    a.api-close x close
+    .row
+      h2 Available API's
+      .row
+        .third
+          a(href="http://developer.paypal.com", target="_blank")
+            img(src="/images/sponsors/paypal-developer.png", alt="PayPal")
+  .prize-container
+    a.prize-close x close
+    .row
+      h2 Challenges &amp; Prizes
+      //- .row
+      //-   .three-quarter
+      //-     h3
+      //-       a(href="https://soundcloud.com") Soundcloud
+      //-   .quarter
+      //-     img(src="img/soundcloud.png", alt="soundcloud")
+      //-   .row
+      //-     p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas sed diam eget risus varius blandit sit amet non magna.
+block tickets
+  include includes/ticket-hackathon
