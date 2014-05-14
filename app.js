@@ -132,7 +132,7 @@ app.get('/conference', function (req, res) {
 
             res.render('conference',{
                 'title':app.locals.title,
-                'page':'Speakers',
+                'page':'Conference',
                 'speakerObject' : speakerObject
             }); 
 

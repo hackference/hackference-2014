@@ -1,7 +1,7 @@
 {
 	"id":"dizzeehaskell",
 	"name":"Laurence E. Day",
-	"image":"/images/speakers/dizzeehaskell.jps",
+	"image":"/images/speakers/dizzeehaskell.jpg",
 	"title":"Fourth-year research PhD student at the University of Nottingham.",
 	"bio":"Laurence is a PhD student at the University of Nottingham. His research revolves around the notion of 'modular compilation' on an axis not usually undertaken by software developers - according to the computational features that a source language can support, rather than designing standalone lexers, parsers, and code generators. Whilst he is currently writing up his doctoral thesis, more generally he is a lazy man, interested in finding the least subset of generic code that will let him do as much as possible so he can browse pictures of doge on Reddit instead. Recently, Laurence spent four months working at Intel Labs with the Programming Systems Laboratory on the Intel Functional Language Compiler, designing an API and runtime for dispatching parallel kernel computations for execution on GPU.",
 	"links":{
