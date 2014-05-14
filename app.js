@@ -45,19 +45,19 @@ app.get('/', function (req, res) {
 
     res.render('index',{
         'title':app.locals.title,
-        'page':'For those about to build, we salute you.'
+        'page':'For those about to build, we salute you.',
+        'pageClass':'home'
     }); 
 
 });
 
 // Tickets
 app.get('/tickets', function (req, res) {
-
-    res.render('tickets',{
-        'title':app.locals.title,
-        'page':'Tickets'
-    }); 
-
+    res.writeHead(301, {
+    'Location': '/conference'
+    //add other headers here...
+    });
+    res.end();
 });
 
 // Speakers
@@ -133,6 +133,7 @@ app.get('/conference', function (req, res) {
             res.render('conference',{
                 'title':app.locals.title,
                 'page':'Conference',
+                'pageClass':'conference',
                 'speakerObject' : speakerObject
             }); 
 
@@ -145,7 +146,8 @@ app.get('/hack', function (req, res) {
 
     res.render('hack',{
         'title':app.locals.title,
-        'page':'Hack'
+        'page':'Hack',
+        'pageClass':'conference'
     }); 
 
 });
@@ -165,7 +167,8 @@ app.get('/sponsors', function (req, res) {
 
     res.render('sponsors',{
         'title':app.locals.title,
-        'page':'Sponsors'
+        'page':'Sponsors',
+        'pageClass':'page-template'
     }); 
 
 });
