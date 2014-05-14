@@ -5,7 +5,7 @@
   "title":"CTO at Whisk.",
   "bio":"David is a full-stack developer with a love of language. At Whisk, he builds web-services in Scala and single-page web applications in AngularJS. He is a programming language nerd, and loves the functional freedom of Scala and Racket. In a former life, he gained a PhD in machine learning and natural language processing, which he now puts to work powering Whisk's recipe understanding engines. Loves learning.",
   "links":{
-    "twitter":"https://twitter.com/junglebarry",
-    "github":"https://github.com/junglebarry"
+    "Twitter":"https://twitter.com/junglebarry",
+    "GitHub":"https://github.com/junglebarry"
   }
 }

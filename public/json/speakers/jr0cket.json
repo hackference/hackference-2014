@@ -5,9 +5,9 @@
 	"title":"Developer Advocate for Heroku and Salesforce.",
 	"bio":"John is a developer in the community who loves learning new stuff and helping others get the most out of technology. He is the author of Clojure made Simple and blogs on developer tools & Clojure",
 	"links":{
-		"twitter":"https://twitter.com/jr0cket",
-		"github":"https://github.com/jr0cket",
-		"personal":"http://jr0cket.co.uk/",
-		"book":"http://developerpress.com/en/clojure-made-simple-introduction-clojure"
+		"Twitter":"https://twitter.com/jr0cket",
+		"GitHub":"https://github.com/jr0cket",
+		"Website":"http://jr0cket.co.uk/",
+		"Book":"http://developerpress.com/en/clojure-made-simple-introduction-clojure"
 	}
 }

@@ -112,16 +112,7 @@ app.get('/conference', function (req, res) {
 
                     for(var key in speakerData.links){
                         var link = speakerData.links[key];
-                        switch(key) {
-                            case 'github':
-                              key = 'github-alt';
-                              break;
-                            case 'personal':
-                              key = 'home';
-                              break;
-                            default:
-                        }
-                        speakerLinks['fa-'+key] = link;
+                        speakerLinks[key] = link;
                     }
 
                     speakerData.links = speakerLinks;

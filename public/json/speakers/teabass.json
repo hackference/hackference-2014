@@ -5,8 +5,8 @@
 	"title":"GitHub Developer.",
 	"bio":"Andrew is developer at GitHub, based in Bath, England. He spends most of his days programming in Ruby, playing with Node.js, contributing to open source projects and organising local developer user groups. He also aspires to one day take over the world with a fleet of JavaScript powered quadcopters.",
 	"links":{
-		"twitter":"https://twitter.com/teabass",
-		"github":"https://github.com/andrew",
-		"personal":"http://nesbitt.io/"
+		"Twitter":"https://twitter.com/teabass",
+		"GitHub":"https://github.com/andrew",
+		"Personal":"http://nesbitt.io/"
 	}
 }

@@ -22,6 +22,7 @@ block content
             h3=val.name
             p=val.bio
             small
-              each url, image in val.links
+              each url, key in val.links
                 a(href=url, target="_blank")
-                  i.fa.fa-2x(class=image)
+                  =key
+                | &nbsp;
