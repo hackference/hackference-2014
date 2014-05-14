@@ -1,0 +1,27 @@
+extend layout
+block content
+  .full.conf-banner.blue-bg
+    img.opacity(src="/images/backgrounds/conference.jpg", alt="banner")
+    .wrapper.clearfix
+      .conf-banner-containter.perfect
+        .half
+          h1 Conference
+          h2.green-text September 19
+            sup th
+        .half
+          button.overlay-toggle
+            a order tickets
+  .full.speakers
+    .wrapper.top-bottom.clearfix
+      h2.green-text Speakers
+      each val, index in speakerObject
+        .half.hover-row.clearfix.wow.fadeInUp
+          .speaker-image
+            img(src=val.image, alt=val.name, title=val.name)
+          .speaker-content
+            h3=val.name
+            p=val.bio
+            small
+              each url, image in val.links
+                a(href=url, target="_blank")
+                  i.fa.fa-2x(class=image)

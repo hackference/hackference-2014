@@ -62,6 +62,24 @@ app.get('/tickets', function (req, res) {
 
 // Speakers
 app.get('/speakers', function (req, res) {
+    res.writeHead(301, {
+    'Location': '/conference'
+    //add other headers here...
+    });
+    res.end();
+});
+
+// Schedule
+app.get('/schedule', function (req, res) {
+    res.writeHead(301, {
+    'Location': '/conference'
+    //add other headers here...
+    });
+    res.end();
+});
+
+// Confernece
+app.get('/conference', function (req, res) {
 
     var async = require('async');
 
@@ -121,7 +139,7 @@ app.get('/speakers', function (req, res) {
         // Final callback after each item has been iterated over.
         function(err) {
 
-            res.render('speakers',{
+            res.render('conference',{
                 'title':app.locals.title,
                 'page':'Speakers',
                 'speakerObject' : speakerObject
