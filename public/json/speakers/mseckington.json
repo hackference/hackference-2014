@@ -1,0 +1,12 @@
+{
+	"id":"mseckington",
+	"name":"Melinda Seckington",
+	"image":"/images/speakers/mseckington.jpg",
+	"title":"Developer. Event Organizer. Blogger.",
+	"bio":"Melinda is a Ruby developer at FutureLearn, a social learning platform. She loves attending BarCamps, Hackdays and other tech meet ups, and since 2009 has been organising them at Geeks of London. She also writes at MissGeeky, a blog about all things geeky and girly.",
+	"links":{
+		"Twitter":"https://twitter.com/mseckington",
+		"GitHub":"https://github.com/mseckington",
+		"Website":"http://missgeeky.com/projects/"
+	}
+}
