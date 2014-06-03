@@ -1,0 +1,12 @@
+{
+	"id":"dan_jenkins",
+	"name":"Dan Jenkins",
+	"image":"/images/speakers/dan_jenkins.jpg",
+	"title":"Developer Advocate at Twitter.",
+	"bio":"Dan's been hacking with node for years, since it's infancy. He's just started up his own consultancy business called Nimble Ape. Dan contributes to open source as much as he can, with interests in both Web and VoIP platforms. He once controlled a nodecopter via VoIP and the phone's number keypad. Dan loves architecting solutions, as well as integrating pesky legacy apps with new shiny stuff.",
+	"links":{
+		"Twitter":"https://twitter.com/dan_jenkins",
+		"GitHub":"https://github.com/danjenkins",
+		"Website":"http://www.dan-jenkins.co.uk"
+	}
+}
