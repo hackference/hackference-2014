@@ -43,6 +43,14 @@
 		{
 			"id":"mseckington",
 			"href":"/speakers/mseckington.json"
+		},
+		{
+			"id":"andypiper",
+			"href":"/speakers/andypiper.json"
+		},
+		{
+			"id":"dan_jenkins",
+			"href":"/speakers/dan_jenkins.json"
 		}
 	]
 }
