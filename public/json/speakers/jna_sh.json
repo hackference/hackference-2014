@@ -1,0 +1,11 @@
+{
+	"id":"viktortnk",
+	"name":"Viktor Taranenko",
+	"image":"http://placehold.it/346x466/2f2f2f/ebebeb&text=%7B+Viktor+Taranenko+%7D",
+	"title":"Senior developer at @WhiskTeam.",
+	"bio":"Viktor is a developer looking after Whisk's backend and infrastructure. Functional programming addict. Working primarily with Scala, he loves it's academic nature and incredible type system. But at the same time he might enjoy the Clojure's elegance and simplicity. Being curious about modern tech (including databases) he is always trying to make Whisk more scalable, performant and reliable.",
+	"links":{
+		"Twitter":"https://twitter.com/viktortnk",
+		"GitHub":"https://github.com/viktortnk"
+	}
+}
