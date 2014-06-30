@@ -55,6 +55,14 @@
 		{
 			"id":"viktortnk",
 			"href":"/speakers/viktortnk.json"
+		},
+		{
+			"id":"knollery",
+			"href":"/speakers/knolleary.json"
+		},
+		{
+			"id":"jna_sh",
+			"href":"/speakers/jna_sh.json"
 		}
 	]
 }
