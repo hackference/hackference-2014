@@ -700,8 +700,7 @@ h2.green-text {
 
 @font-face {
   font-family: 'iconFont';
-  src: url('/fonts/icomoon.woff') format('woff'),
-       url('/fonts/icomoon.ttf') format('truetype');
+  src: url('/fonts/icomoon.woff') format('woff'),url('/fonts/icomoon.ttf') format('truetype');
 }
 
 span.icon {
