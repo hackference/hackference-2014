@@ -221,7 +221,8 @@ img {
 
 @font-face {
   font-family: 'socialFont';
-  src: url('/fonts/fontello.woff') format('woff'),url('/fonts/fontello.ttf') format('truetype');
+  src: url('/fonts/fontello.woff') format('woff'),
+       url('/fonts/fontello.ttf') format('truetype');
 }
 
 .social-bar a {
@@ -699,7 +700,8 @@ h2.green-text {
 
 @font-face {
   font-family: 'iconFont';
-  src: url('/fonts/icomoon.woff') format('woff'),url('/fonts/icomoon.ttf') format('truetype');
+  src: url('/fonts/icomoon.woff') format('woff'),
+       url('/fonts/icomoon.ttf') format('truetype');
 }
 
 span.icon {
