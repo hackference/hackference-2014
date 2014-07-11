@@ -221,8 +221,7 @@ img {
 
 @font-face {
   font-family: 'socialFont';
-  src: url('/fonts/fontello.woff') format('woff'),
-       url('/fonts/fontello.ttf') format('truetype');
+  src: url('/fonts/fontello.woff') format('woff'),url('/fonts/fontello.ttf') format('truetype');
 }
 
 .social-bar a {
