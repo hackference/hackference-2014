@@ -1,93 +1,93 @@
 @media all and (max-width: 1300px) {
-	
+
 	.contact-container {
 		width: 100% !important;
 	}
-	
+
 }
 
 
 @media all and (max-width: 1200px) {
-	
+
 	.contact-container button a {
 		padding: 0 76px !important;
 	}
-	
+
 	input#fieldName, input#fieldEmail {
 		width: 260px !important;
 	}
-	
+
 	input {
 		font-size: 20px !important;
 	}
-	
+
 	footer p, footer a {
 		font-size: 12px !important;
 	}
-	
+
 	.speakers .half {
 		width: 30% !important;
 		margin-bottom: 40px !important;
 		margin-right: 5% !important;
 	}
-	
+
 	.speakers .half:nth-child(2n) {
 		clear: none !important;
 	}
-	
+
 	.speakers .half:nth-child(3n+2) {
 		clear: both !important;
 	}
-	
+
 	.speakers .half:nth-child(3n+1) {
 		margin-right: 0 !important;
 	}
-	
+
 	.speakers .speaker-content {
 		width: 100% !important;
 		padding: 0 !important;
 	}
-	
+
 	.speakers .speaker-image {
 		width: 100% !important;
 	}
-	
+
 	.speakers .row {
 		margin: 0 !important;
 	}
-	
+
 	.speaker-content h3 {
 		padding-top: 20px;
 	}
-	
+
 }
 
 
 @media all and (max-width: 1150px) {
-	
+
 	.schedule {
 		min-height: 600px !important;
 		overflow: hidden;
 	}
-	
+
 	.schedule img {
 		height: 100% !important;
 		width: auto !important;
 	}
-	
+
 	.schedule-start, .schedule-end {
 		width: 15% !important;
 	}
-	
+
 	.schedule-topic {
 		width: 45% !important;
 	}
-	
+
 }
 
 
 @media all and (max-width: 1100px) {
-	
+
 	.black-bg .half {
 		width: 50% !important;
 		height: auto;
@@ -95,243 +95,243 @@
 		float: left;
 		overflow: hidden !important;
 	}
-	
+
 	.hackathon .black-bg .half {
 		min-height: 1px !important;
 	}
-	
+
 	.black-bg img {
 		height: 100% !important;
 		width: auto !important;
 	}
-	
+
 	.venue-container {
 		width: 90% !important;
 	}
-	
+
 	.venue-container h2 {
 		font-size: 40px !important;
 	}
-	
+
 }
 
 
 @media all and (min-width: 1000px) {
-	
+
 	.prize-container .quarter {
 		padding: 0 !important;
 		margin-top: 30px !important;
 	}
-	
+
 }
 
 
 @media all and (max-width: 1000px) {
-	
+
 	.banner-container {
 		width: 60% !important;
 	}
-	
+
 	h2.green-text {
 		font-size: 30px !important;
 	}
-	
+
 	button a {
 		padding: 0 58px !important;
 	}
-	
+
 	header {
 		top: 0 !important;
 	}
-	
+
 	.nav-bar ul li a {
 		font-size: 18px !important;
 	}
-	
+
 	.alt-logo {
 		padding: 20px 0 8px 0 !important;
 	}
-	
+
 	.scrolled-nav ul {
 		margin: 0 !important;
 	}
-	
+
 	.scrolled-nav ul li a {
 		font-size: 18px !important;
 	}
-	
+
 	.nice-padding {
 		padding: 120px 50px !important;
 	}
-	
+
 	p {
 		font-size: 20px !important;
 		line-height: 28px !important;
 	}
-	
+
 	footer .nice-padding {
 		padding: 120px 0 !important;
 	}
-	
+
 	#sponsors h2 {
 		display: none !important;
 	}
-	
+
 	.conf-banner-container, .hack-banner-container {
 		width: 100% !important;
 	}
-	
+
 	.slide-right {
 		right: 0% !important;
 	}
-	
+
 	.slide-left {
 		left: 0% !important;
 	}
-	
+
 }
 
 
 @media all and (max-width: 900px) {
-	
+
 	.contact-container input#fieldName {
 		width: 90% !important;
 		margin: 0 0 30px 0 !important;
 	}
-	
+
 	.contact-container input#fieldEmail {
 		width: 90% !important;
 		margin: 0 0 30px 0 !important;
 	}
-	
+
 	.contact-container button {
 		width: 90% !important;
 	}
-	
+
 	.blue-contact {
 		min-height: 480px !important;
 		overflow: hidden !important;
 	}
-	
+
 	.blue-contact img {
 		height: 100% !important;
 		width: auto !important;
 	}
-	
+
 	.quarter {
 		padding: 20px !important;
 	}
-	
+
 	.api a, .prize a {
 		line-height: 40px !important;
 		padding: 0 20px !important;
 	}
-	
+
 	.hackathon .top-bottom {
 		padding: 100px 0 !important;
 	}
-	
+
 }
 
 
 @media all and (max-width: 860px) {
-	
+
 	.speakers .half {
 		width: 48% !important;
 		margin-bottom: 40px !important;
 		margin-right: 4% !important;
 	}
-	
+
 	.speakers .half:nth-child(2n-1) {
 		margin-right: 0 !important;
 	}
-	
+
 	.speakers .half:nth-child(3n+1) {
 		margin-right: 4% !important;
 	}
-	
+
 	.speakers .half:nth-child(6n+1) {
 		margin-right: 0% !important;
 	}
-	
+
 	.speakers .half:nth-child(3n+2) {
 		clear: none !important;
 	}
-	
+
 }
 
 
 @media all and (max-width: 800px) {
-	
+
 	.prize-container .quarter {
 		padding: 0 !important;
 		margin-top: 30px !important;
 	}
-	
+
 }
 
 
 @media all and (max-width: 768px) {
-	
-	footer .third {
+
+	footer .third, footer .half {
 		width: 100% !important;
 	}
-	
+
 	footer .third p {
 		text-align: center !important;
 		margin: 0.2em 0 !important;
 	}
-	
+
 	footer .third p, footer .third a {
 		font-size: 14px !important;
 	}
-	
+
 	footer a {
 		line-height: 20px !important;
 	}
-	
+
 	footer #sponsors .third:nth-child(2n) p {
 		margin: 0 !important;
 	}
-	
+
 	footer .quarter {
 		width: 50% !important;
 	}
-	
+
 	header {
 		display: none !important;
 	}
-	
+
 	.banner, .conf-banner-container, .hack-banner-container {
 		margin-top: 60px !important;
 	}
-	
+
 	.scrolled-nav {
 		opacity: 1 !important;
 	}
-	
+
 	.mobile-hide {
 		display: none;
 	}
-	
+
 	.mobile-show {
 		display: inline-block !important;
 		float: right !important;
 	}
-	
+
 	.scrolled-nav ul {
 		width: 100% !important;
 		clear: both;
 		padding: 40px 0 !important;
 	}
-	
+
 	.scrolled-nav ul li {
 		width: 100% !important;
 		display: block !important;
 		text-align: center !important;
 		margin-left: 0 !important;
 	}
-	
+
 	.menu {
 		position: relative;
 		display:  inline-block;
@@ -339,40 +339,40 @@
 		height: 30px;
 		margin: 18px 0 5px 0;
 	}
-	
+
 	.menu span {
 		margin: 0 auto;
 		position: relative;
 		top: 12px;
 	}
-	
+
 	.menu span:before, .menu span:after {
 		position: absolute;
 		content: '';
 	}
-	
+
 	.menu span, .menu span:before, .menu span:after {
 		width: 30px;
 		height: 4px;
 		background-color: #fafafa;
 		display: block;
 	}
-	
+
 	.menu span:before {
 		margin-top: -10px;
 	}
-	
+
 	.menu span:after {
 		margin-top: 10px;
 	}
-	
+
 	.cross span {
 		-webkit-transition-duration: 0s;
 		-webkit-transition-delay: .2s;
 		background-color: rgba(0,0,0,0.0);
 		-webkit-transition-delay: .2s;
 	}
-	
+
 	.cross span:before {
 		-webkit-transition-property: margin, -webkit-transform;
 		-webkit-transition-duration: .2s;
@@ -381,7 +381,7 @@
 		-webkit-transform: rotate(45deg);
 		-webkit-transition-delay: 0, .2s;
 	}
-	
+
 	.cross span:after {
 		-webkit-transition-property: margin, -webkit-transform;
 		-webkit-transition-duration: .2s;
@@ -390,202 +390,202 @@
 		-webkit-transform: rotate(-45deg);
 		-webkit-transition-delay: 0, .2s;
 	}
-	
+
 	h1 {
 		font-size: 60px !important;
 	}
-	
+
 	.conf-banner, .hack-banner {
 		min-height: 400px !important;
 		overflow: hidden;
 	}
-	
+
 	.conf-banner img, .hack-banner img {
 		height: 100% !important;
 		width: auto !important;
 	}
-	
+
 	.conf-banner-container .half, .hack-banner-container .half {
 		width: 100% !important;
 	}
-	
+
 	.conf-banner-container h1, .conf-banner-container h2, .hack-banner-container h1, .hack-banner-container h2 {
 		text-align: center !important;
 	}
-	
+
 	.conf-banner-container button, .hack-banner-container button {
 		float: none !important;
 	}
-	
+
 	.button-container .half {
 		width: 100% !important;
 	}
-	
+
 	.button-container .top-bottom {
 		padding: 100px 0 !important;
 	}
-	
+
 	.api {
 		margin-bottom: 40px !important;
 	}
-	
+
 }
 
 
 @media all and (max-width: 700px) {
-	
+
 	.api-container .third img {
 		padding: 0 !important;
 	}
-	
+
 }
 
 
 @media all and (max-width: 660px) {
-	
+
 	.schedule-speaker {
 		width: 50% !important;
 	}
-	
+
 	.schedule-topic {
 		width: 50% !important;
 	}
-	
+
 	.schedule-start, .schedule-end {
 		width: 50% !important;
 	}
-	
+
 	.schedule-speaker, .schedule-topic, .schedule-start, .schedule-end {
 		border: none !important;
 		padding: 6px 0 !important;
 	}
-	
+
 	.schedule-row:nth-child(2n) .schedule-speaker, .schedule-row:nth-child(2n) .schedule-topic,
 	.schedule-row:nth-child(2n) .schedule-start, .schedule-row:nth-child(2n) .schedule-end {
 		background: #dddddd !important;
 	}
-	
+
 	.schedule img {
 		min-height: 900px !important;
 	}
-	
+
 	footer .quarter {
 		width: 100% !important;
 	}
-	
+
 	footer .dark-grey {
 		padding: 30px 0 !important;
 	}
-	
+
 	.slide-right, .slide-left {
 		padding: 20px !important;
 		-webkit-overflow-scrolling: touch;
 	}
-	
+
 	.contact-container h2 {
 		font-size: 30px !important;
 	}
-	
+
 	.black-bg .half {
 		max-height: 300px !important;
 		min-height: 300px !important;
 	}
-	
+
 	.venue-container h2 {
 		font-size: 30px !important;
 	}
-	
+
 	input {
 		font-size: 16px !important;
 	}
-	
+
 }
 
 
 @media all and (max-width: 580px) {
-	
+
 	.black-bg .half {
 		width: 100% !important;
 		max-height: 360px !important;
 	}
-	
+
 	.nice-padding {
 		padding: 120px 0 !important;
 	}
-	
+
 	.api-container .third {
 		width: 100% !important;
 	}
-	
+
 }
 
 
 @media all and (max-width: 546px) {
-	
+
 	.banner button a {
 		padding: 0 10px !important;
 	}
-	
+
 	.banner h2 {
 		font-size: 20px !important;
 	}
-	
+
 	.banner sup {
 		font-size: 10px !important;
 	}
-	
+
 	a {
 		line-height: 50px !important;
 	}
-	
+
 	h1 {
 		font-size: 40px !important;
 	}
-	
+
 	.speakers .half {
 		width: 100% !important;
 	}
-	
+
 }
 
 @media all and (max-width: 480px) {
-	
+
 	button a {
 		font-size: 16px !important;
 	}
-	
+
 	.banner-container {
 		width: 100% !important;
 	}
-	
+
 	.banner-container img {
 		display: none !important;
 	}
-	
+
 	p {
 		font-size: 14px !important;
 		line-height: 20px !important;
 	}
-	
+
 	.schedule-speaker {
 		width: 100% !important;
 	}
-	
+
 	.schedule-topic {
 		width: 100% !important;
 	}
-	
+
 	.schedule img {
 		min-height: 1060px !important;
 	}
-	
+
 	h1 {
 		font-size: 30px !important;
 	}
-	
+
 	.prize-container .quarter {
 		padding: 0 !important;
 		margin-top: 40px !important;
 	}
-	
+
 }
