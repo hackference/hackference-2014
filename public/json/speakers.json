@@ -63,6 +63,10 @@
 		{
 			"id":"erikaheidi",
 			"href":"/speakers/erikaheidi.json"
+		},
+		{
+			"id":"davidmytton",
+			"href":"/speakers/davidmytton.json"
 		}
 	]
 }
