@@ -987,6 +987,14 @@ span.icon {
   text-transform: none;
 }
 
+.student {
+  color: #1cbbb4;
+  display: block;
+  clear: both;
+  margin-top: 30px;
+  text-transform: none;
+}
+
 
 /* Footer */
 
