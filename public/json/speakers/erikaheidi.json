@@ -1,0 +1,13 @@
+{
+	"id":"erikaheidi",
+	"name":"Erika Heidi",
+	"image":"/images/speakers/erikaheidi.jpg",
+	"title":"Freelance Developer and DevOps.",
+	"bio":"Erika is a web developer / devOp working with PHP and Linux for over a decade. Author of Vagrant Cookbook on Leanpub, she works mostly with independent projects monetized by advertisement. This gives her the opportunity to experiment with many different kinds of projects and tools, while also being an active open source contributor, speaker and writer.",
+	"links":{
+		"Twitter":"https://twitter.com/erikaheidi",
+		"GitHub":"https://github.com/erikaheidi",
+		"Website":"http://erikaheidi.com",
+		"Book":"https://leanpub.com/vagrantcookbook"
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"id":"davidmytton",
+	"name":"David Mytton",
+	"image":"/images/speakers/davidmytton.png",
+	"title":"Founder of Server Density.",
+	"bio":"David Mytton is the founder of server monitoring tool, Server Density, where he has been using MongoDB in production for almost 4 years. He has been programming in PHP and Python for over 10 years, regularly speaks about MongoDB (including starting the London MongoDB User Group), co-founded the Open Rights Group and can often be found cycling in London or drinking tea in Japan.",
+	"links":{
+		"Twitter":"https://twitter.com/davidmytton",
+		"Server Density":"hhttp://www.serverdensity.com/"
+	}
+}
