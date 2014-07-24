@@ -5,11 +5,11 @@
 
 @import 'responsive.css';
 
-div, article, section, header, footer, nav, li { 
+div, article, section, header, footer, nav, li {
   position: relative;
 }
 
-.group:after { 
+.group:after {
   display: block;
   height: 0;
   clear: both;
@@ -72,15 +72,15 @@ img {
 }
 
 :-moz-placeholder { /* Firefox 18- */
-   color: rgba(30, 31, 30, 0.2);  
+   color: rgba(30, 31, 30, 0.2);
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: rgba(30, 31, 30, 0.2);  
+   color: rgba(30, 31, 30, 0.2);
 }
 
-:-ms-input-placeholder {  
-   color: rgba(30, 31, 30, 0.2);  
+:-ms-input-placeholder {
+   color: rgba(30, 31, 30, 0.2);
 }
 
 
@@ -827,6 +827,9 @@ span.icon {
   padding: 10px 0;
   background: #ededed;
   color: #a5a5a5;
+}
+.schedule-lunch {
+  width: 100%;
 }
 
 /* Hackathon Page */

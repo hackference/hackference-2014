@@ -13,9 +13,11 @@ block content
             a order tickets
   .full.speakers
     .wrapper.top-bottom.clearfix
+      a(name="speakers")
       h2.green-text Speakers
       each val, index in speakerObject
         .half.hover-row.clearfix.wow.fadeInUp
+          a(name=val.id)
           .speaker-image
             img(src=val.image, alt=val.name, title=val.name)
           .speaker-content
@@ -26,25 +28,90 @@ block content
                 a(href=url, target="_blank")
                   =key
                 | &nbsp;
-  //- .full.schedule.blue-bg
-  //-   img.opacity(src="/images/backgrounds/schedule-bg.jpg", alt="Schedule Background")
-  //-   .wrapper.clearfix
-  //-     .perfect
-  //-       h2.green-text Conference Schedule
-  //-       .tabs
-  //-         .tab-one.tab-active Developer Tracks
-  //-         .tab-two Frontend Tracks
-  //-       #tab-one.tab-container.active
-  //-         .schedule-row.clearfix
-  //-           .schedule-speaker Speaker Name
-  //-           .schedule-topic Developing API
-  //-           .schedule-start 09:00
-  //-           .schedule-end 10:00
-  //-       #tab-two.tab-container
-  //-         .schedule-row.clearfix
-  //-           .schedule-speaker Speaker Name
-  //-           .schedule-topic Developing API
-  //-           .schedule-start 09:00
-  //-           .schedule-end 10:00
+  .full.schedule.blue-bg
+    img.opacity(src="/images/backgrounds/schedule-bg.jpg", alt="Schedule Background")
+    .wrapper.clearfix
+      .perfect
+        a(name="schedule")
+        h2.green-text Conference Schedule
+        .tabs
+          .tab-one.tab-active Track 1
+          .tab-two Track 2
+        #tab-one.tab-container.active
+          .schedule-row.clearfix
+            .schedule-speaker Cristiano Betta
+            .schedule-topic TBC
+            .schedule-start 09:30
+            .schedule-end 10:20
+          .schedule-row.clearfix
+            .schedule-speaker Andy Piper
+            .schedule-topic Connecting to the pulse of the planet with Twitter APIs
+            .schedule-start 10:35
+            .schedule-end 11:25
+          .schedule-row.clearfix
+            .schedule-speaker Melinda Seckington
+            .schedule-topic TBC
+            .schedule-start 11:40
+            .schedule-end 12:30
+          .schedule-row.clearfix
+            .schedule-speaker.schedule-lunch Lunch
+          .schedule-row.clearfix
+            .schedule-speaker Panel
+            .schedule-topic SPA, JS Frameworks and JS Applications
+            .schedule-start 13:30
+            .schedule-end 14:20
+          .schedule-row.clearfix
+            .schedule-speaker Andrew Lindsay
+            .schedule-topic After the Hack Day
+            .schedule-start 14:35
+            .schedule-end 15:25
+          .schedule-row.clearfix
+            .schedule-speaker Nick O'Leary
+            .schedule-topic Wiring the Internet of Things with Node-RED
+            .schedule-start 15:40
+            .schedule-end 16:30
+          .schedule-row.clearfix
+            .schedule-speaker Andrew Nesbitt
+            .schedule-topic Robotics 101
+            .schedule-start 16:45
+            .schedule-end 17:35
+        #tab-two.tab-container
+          .schedule-row.clearfix
+            .schedule-speaker John Stevenson
+            .schedule-topic Functional Programming for Everyone with Clojure
+            .schedule-start 09:30
+            .schedule-end 10:20
+          .schedule-row.clearfix
+            .schedule-speaker Dan Jenkins
+            .schedule-topic Node.js: the awesome parts
+            .schedule-start 10:35
+            .schedule-end 11:25
+          .schedule-row.clearfix
+            .schedule-speaker Laurence Day
+            .schedule-topic Sorry You're Not My Type
+            .schedule-start 11:40
+            .schedule-end 12:30
+          .schedule-row.clearfix
+            .schedule-speaker.schedule-lunch Lunch
+          .schedule-row.clearfix
+            .schedule-speaker Panel
+            .schedule-topic Many flavours of NoSQL
+            .schedule-start 13:30
+            .schedule-end 14:20
+          .schedule-row.clearfix
+            .schedule-speaker Joe Nash
+            .schedule-topic Gateway drugs to Haskell for Web devs
+            .schedule-start 14:35
+            .schedule-end 15:25
+          .schedule-row.clearfix
+            .schedule-speaker Erika Heidi
+            .schedule-topic Portable development environments with Vagrant
+            .schedule-start 15:40
+            .schedule-end 16:30
+          .schedule-row.clearfix
+            .schedule-speaker Robin Johnson
+            .schedule-topic Introduction to Golang (And why I love it)
+            .schedule-start 16:45
+            .schedule-end 17:35
 block tickets
   include includes/ticket-conference
