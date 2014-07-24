@@ -59,6 +59,10 @@
 		{
 			"id":"jna_sh",
 			"href":"/speakers/jna_sh.json"
+		},
+		{
+			"id":"erikaheidi",
+			"href":"/speakers/erikaheidi.json"
 		}
 	]
 }
