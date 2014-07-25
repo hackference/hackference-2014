@@ -302,7 +302,7 @@ p {
 }
 
 a {
-  display: inline-block;
+  /*display: inline-block;*/
   color: #1cbbb4;
   font-size: 36px;
   line-height: 60px;
