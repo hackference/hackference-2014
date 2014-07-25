@@ -3,7 +3,7 @@
 	"name":"Joe Nash",
 	"image":"/images/speakers/jna_sh.jpg",
 	"title":"Student and Intern.",
-	"bio":"Unrepentant Haskell addict and prog-lang enthusiast. Having learnt the dark arts of functional programming at the University of Nottingham, Joe will soon be starting a PhD in parallel and heterogeneous systems at St Andrews. Joe is also part of the UK team member of Major League Hacking, the student hackathon league.",
+	"bio":"Unrepentant Haskell addict and prog-lang enthusiast. Having learnt the dark arts of functional programming at the University of Nottingham, Joe will soon be starting a PhD in parallel and heterogeneous systems at St Andrews. Joe is also a UK team member at Major League Hacking, the student hackathon league.",
 	"links":{
 		"Twitter":"https://twitter.com/jna_sh"
 	}
