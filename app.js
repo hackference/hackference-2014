@@ -47,12 +47,19 @@ app.get('/', function (req, res) {
         'title':app.locals.title,
         'page':'For those about to build, we salute you.',
         'pageClass':'home'
-    }); 
+    });
 
 });
 
 // Tickets
 app.get('/tickets', function (req, res) {
+    res.writeHead(301, {
+    'Location': '/conference'
+    //add other headers here...
+    });
+    res.end();
+});
+app.get('/buy', function (req, res) {
     res.writeHead(301, {
     'Location': '/conference'
     //add other headers here...
@@ -88,7 +95,7 @@ app.get('/conference', function (req, res) {
     fs.readFile(app.locals.jsonpath+'/speakers.json','utf8',function(err,data){
 
         data = JSON.parse(data);
-        
+
         var speakerArray = Array();
         for(var i=0;i<data.speakers.length;i++){
             speakerArray[i] = app.locals.jsonpath+data.speakers[i].href;
@@ -101,7 +108,7 @@ app.get('/conference', function (req, res) {
         speakerArray,
         // Pass iterator function that is called for each item
         function(filename, cb) {
-        
+
             fs.readFile(filename,'utf8',function(err,speakerData){
 
                 if (!err) {
@@ -135,9 +142,9 @@ app.get('/conference', function (req, res) {
                 'page':'Conference',
                 'pageClass':'conference',
                 'speakerObject' : speakerObject
-            }); 
+            });
 
-        });  
+        });
     });
 });
 
@@ -148,7 +155,7 @@ app.get('/hack', function (req, res) {
         'title':app.locals.title,
         'page':'Hack',
         'pageClass':'conference'
-    }); 
+    });
 
 });
 
@@ -158,7 +165,7 @@ app.get('/information', function (req, res) {
     res.render('information',{
         'title':app.locals.title,
         'page':'Info'
-    }); 
+    });
 
 });
 
@@ -169,7 +176,7 @@ app.get('/sponsors', function (req, res) {
         'title':app.locals.title,
         'page':'Sponsors',
         'pageClass':'page-template'
-    }); 
+    });
 
 });
 
