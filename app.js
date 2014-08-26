@@ -179,6 +179,15 @@ app.get('/sponsors', function (req, res) {
     });
 
 });
+app.get('/sponsors/payment', function (req, res) {
+
+    res.render('payment',{
+        'title':app.locals.title,
+        'page':'Sponsors Payment',
+        'pageClass':'page-template'
+    });
+
+});
 
 // Start Listening
 var port = process.env.PORT || 3000;
