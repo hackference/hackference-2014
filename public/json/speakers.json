@@ -25,10 +25,6 @@
 			"href":"/speakers/rbin.json"
 		},
 		{
-			"id":"leggetter",
-			"href":"/speakers/leggetter.json"
-		},
-		{
 			"id":"junglebarry",
 			"href":"/speakers/junglebarry.json"
 		},
@@ -67,6 +63,10 @@
 		{
 			"id":"davidmytton",
 			"href":"/speakers/davidmytton.json"
+		},
+		{
+			"id":"Jack_Franklin",
+			"href":"/speakers/Jack_Franklin.json"
 		}
 	]
 }
