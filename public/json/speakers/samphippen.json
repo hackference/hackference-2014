@@ -1,0 +1,10 @@
+{
+	"id":"samphippen",
+	"name":"Sam Phippen",
+	"image":"http://samphippen.com/img/sam.jpg",
+	"title":"Freelance software developer.",
+	"bio":"Sam is a swashbuckling hacker from London, UK. He fixes every size of data problem at Fun and Plausible Solutions. He helps fight for the forces of justice as a member of the RSpec core team. He's sad that he can't hug every cat.",
+	"links":{
+		"Twitter":"https://twitter.com/samphippen"
+	}
+}

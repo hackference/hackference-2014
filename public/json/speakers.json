@@ -67,6 +67,10 @@
 		{
 			"id":"Jack_Franklin",
 			"href":"/speakers/Jack_Franklin.json"
+		},
+		{
+			"id":"samphippen",
+			"href":"/speakers/samphippen.json"
 		}
 	]
 }
