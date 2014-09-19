@@ -6,7 +6,7 @@ html(lang="en")
     title #{title} | #{page}
     link(href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css')
     link(rel='stylesheet', href='/stylesheets/style.css')
-    link(rel='stylesheet', href='/stylesheets/animate.min.css') 
+    link(rel='stylesheet', href='/stylesheets/animate.min.css')
   body.animated.fadeIn(class="#{pageClass}")
     .social-bar
       ul
@@ -31,17 +31,25 @@ html(lang="en")
         .full.dark-grey
           .wrapper
             .third
-              p.text-left &copy;2014 Hackference | Run by 
+              p.text-left
+                a(href="http://confcodeofconduct.com/") Conference Code of Conduct
+            .third &nbsp;
+            .third
+              p.text-right
+                a(href="http://hackcodeofconduct.org/") Hackathon Code of Conduct
+          .wrapper
+            .third
+              p.text-left &copy;2014 Hackference | Run by
                   a(href="https://twitter.com/ukmadlz") Mike Elsmore
             .third
-              p Photography by 
-                  a(href="https://www.flickr.com/photos/andypiper/sets/72157635300181024/") Andy Piper
-                  |  &amp; 
-                  a(href="http://www.cassandralane.co.uk") Cassandra Lane
+              p Photography by
+                  a(href="https://www.flickr.com/photos/andypiper/sets/72157635300181024/")  Andy Piper
+                  |  &amp;
+                  a(href="http://www.cassandralane.co.uk")  Cassandra Lane
             .third
-              p.text-right Website by 
+              p.text-right Website by
                   a(href="http://b9media.co.uk") B9 Media
-                  |  | Hosted on 
+                  |  | Hosted on
                   a(href="https://www.heroku.com") Heroku
       .scrolled-nav
         .wrapper.clearfix
